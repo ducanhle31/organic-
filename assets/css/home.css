@@ -485,7 +485,7 @@ transform: translateX(-50%);
    * PRODUCT
    */
 
-  .product .grid-list { grid-template-columns: repeat(2, 1fr); 
+  .product .grid-list { grid-template-columns: repeat(1, 1fr); 
 /*     grid-template-columns: 2fr 1fr;  */
     column-gap: 20px;
   }
@@ -558,9 +558,10 @@ transform: translateX(-50%);
 /* produce shop */
 
   .product .grid-list {
-   /*  grid-template-columns: 1fr 1fr; */ grid-template-columns: repeat(3, 1fr); 
+   /*  grid-template-columns: 1fr 1fr; */ grid-template-columns: repeat(2, 1fr); 
     column-gap: 20px;
   }
+
   /**
    * SERVICE
    */
@@ -785,7 +786,7 @@ transform: translateX(-50%);
   .filter-btn > img { transform: scale(1.5); }
 
   .product .grid-list { grid-template-columns: repeat(4, 1fr); }
-
+ .product .list-product { grid-template-columns: repeat(3, 1fr); }
 
 
   /**

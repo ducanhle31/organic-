@@ -249,7 +249,7 @@ body {
 
 .product-card {border-color: #c3f3dc; border-width: 0.5px; border-style: solid;
   border-radius: 2px;
-  background-color: rgb(255, 255, 255);
+  background-color:hsl(96, 36%, 95%);
   padding: 0px 0px 20px;
  
   text-align: center;
@@ -560,9 +560,9 @@ body {
  
 }
 
-input[type="checkbox"]{
+/* input[type="checkbox"]{
   display: none;
-}
+} */
 .container1{
   display: none;
   background: #fdfdfd;
