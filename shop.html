@@ -9,14 +9,14 @@
     <!-- 
     - favicon
   -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="shortcut icon" href="./organic.png" type="image/x-icon">
 
     <!-- 
     - custom css link
   -->
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/home.css" />
-
+    <link rel="stylesheet" href="./assets/css/shop.css" />
     <!-- 
     - google font link
   -->
@@ -235,58 +235,137 @@
       </div>
     </aside>
 
- 
-
- <main>
-    <article>
-
-      <!-- 
+    <main>
+      <article>
+        <!-- 
         - #BREADCUMB
       -->
 
-      <div class="breadcumb-wrapper">
+        <div class="breadcumb-wrapper">
+          <ol class="breadcumb-list">
+            <h2 class="breadcumb-item">
+              <a href="./index.html" class="breadcumb-link">Trang chủ</a>
+            </h2>
 
-      
+            <h2 class="breadcumb-items">Sản phẩm</h2>
+          </ol>
+        </div>
 
-        <ol class="breadcumb-list ">
-
-          <h2 class="breadcumb-item">
-            <a href="./index.html" class="breadcumb-link">Trang chủ</a>
-          </h2>
-
-          <h2 class="breadcumb-items">Sản phẩm</h2>
-
-        </ol>
-
-      </div>
-
-  <!-- 
+        <!-- 
         - #PRODUCT
       -->
 
         <section class="section product">
-          <div class="container">
-        <div class="filter">
-                    <h3>Category Filter</h3>
-                    <div id="btns"></div>
-                </div> 
- 
+          <div class="container col-container">
+            <div class="filters-left">
+              <div class="filters-left-top">
+                <h4 style="display: flex">
+                  <ion-icon name="funnel-outline"></ion-icon> &nbsp Bộ lọc
+                </h4>
+                <button id="reset-checkboxes-button">Bỏ lọc</button>
+              </div>
+              <div class="filters">
+                <h4>Danh mục</h4>
+                <label class="containerr"
+                  >Rau củ
+                  <input
+                    type="checkbox"
+                    name="categoryFilter"
+                    class="filter-checkbox"
+                    value="raucu"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="containerr"
+                  >Hoa quả
+                  <input
+                    type="checkbox"
+                    name="categoryFilter"
+                    class="filter-checkbox"
+                    value="hoaqua"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="containerr"
+                  >Các loại hạt
+                  <input
+                    type="checkbox"
+                    name="categoryFilter"
+                    class="filter-checkbox"
+                    value="hat"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="containerr"
+                  >Hải sản
+                  <input
+                    type="checkbox"
+                    name="categoryFilter"
+                    class="filter-checkbox"
+                    value="haisan"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="containerr"
+                  >Thực phẩm tươi sống
+                  <input
+                    type="checkbox"
+                    name="categoryFilter"
+                    class="filter-checkbox"
+                    value="thit"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="filters">
+                <h4>Trạng thái</h4>
 
- 	<div class="filter-condition">
-				<span ">View As a</span>
-				<select name="" id="select">
-					<option value="Default">Default</option>
-					<option value="LowToHigh">Low to high</option>
-					<option value="HighToLow">High to low</option>
-				</select>
-			</div>
+                <label class="containerr"
+                  >Mới về
+                  <input
+                    type="checkbox"
+                    name="categoryFilter"
+                    class="filter-checkbox"
+                    value="new"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="containerr"
+                  >Nổi bật
+                  <input
+                    type="checkbox"
+                    name="categoryFilter"
+                    class="filter-checkbox"
+                    value="noibat"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="containerr"
+                  >Đang giảm giá
+                  <input
+                    type="checkbox"
+                    name="categoryFilter"
+                    class="filter-checkbox"
+                    value="sale"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
 
-
-
-
-
-            <div class="grid-list" id="root">
-           <!--  <div class="product-card" >
+            <div class="container-right">
+                <div class="price_sort ">
+            <label for="price">Sắp xếp:</label>
+            <select name="price" id="price">
+              <option value="default">Mặc định</option>
+              <option value="increase">Giá tăng dần</option>
+              <option value="decrease">Giá giảm dần</option>
+              <option value="starup">Xếp hạng cao</option>
+              <option value="stardown">Xếp hạng thấp</option>
+            </select>
+          </div>
+              <div class="grid-list list-product products" id="root">
+                <!--  <div class="product-card" >
                 <figure class="card-banner">
                   <img
                     src="./assets/images/products/hoaqua/cam.webp"
@@ -320,23 +399,45 @@
 
                 <button class="btn btn-primary">Thêm vào giỏ</button>
               </div>  -->
+              </div>
 
-           
+<!-- <div class="productsPreview ">
+
+   <div class="preview" data-target="p-1">
+      <i class="fas fa-times"></i>
+      <img src="images/1.png" alt="">
+      <h3>organic strawberries</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$2.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+ 
+
+</div> -->
+
+
+
+
+              <div class="pagination"></div>
             </div>
           </div>
         </section>
 
-
-
-
-
-
-
-
-<section class="section partner">
+        <!--  -->
+        <section class="section partner">
           <div class="container">
-           
-
             <h2 class="h2 section-title">Đối tác của chúng tôi</h2>
 
             <ul class="has-scrollbar">
@@ -415,7 +516,6 @@
           </div>
         </section>
 
-      
         <!-- 
         - #NEWSLETTER
       -->
@@ -426,7 +526,7 @@
               <p class="section-subtitle">-- Theo dõi chúng tôi --</p>
 
               <h2 class="h2 section-title">
-               Đăng kí nhận tin <span class="span">khuyến mãi 20% .</span>
+                Đăng kí nhận tin <span class="span">khuyến mãi 20% .</span>
               </h2>
 
               <form action="" class="newsletter-form">
@@ -445,9 +545,8 @@
             </div>
           </div>
         </section>
-    </article>
-  </main>
-
+      </article>
+    </main>
 
     <!-- 
     - #FOOTER
@@ -462,7 +561,10 @@
             >
 
             <p class="footer-text">
-              Organic chuyên cung cấp những sản phẩm được kiểm soát chặt chẽ từ khâu con giống, chế biến thức ăn, chăm sóc sức khỏe vật nuôi đến giết mổ, bao gói, bảo quản và vận chuyển một cách tốt nhất, sạch nhất cho thị trường.
+              Organic chuyên cung cấp những sản phẩm được kiểm soát chặt chẽ từ
+              khâu con giống, chế biến thức ăn, chăm sóc sức khỏe vật nuôi đến
+              giết mổ, bao gói, bảo quản và vận chuyển một cách tốt nhất, sạch
+              nhất cho thị trường.
             </p>
 
             <ul class="social-list">
@@ -538,9 +640,7 @@
                 <ion-icon name="call-outline"></ion-icon>
               </div>
 
-              <a href="tel:+1800123456789" class="contact-link"
-                >034 444 9999</a
-              >
+              <a href="tel:+1800123456789" class="contact-link">034 444 9999</a>
             </li>
 
             <li class="footer-item">
@@ -558,7 +658,7 @@
             <p class="footer-list-title">Bản tin</p>
 
             <p class="newsletter-text">
-             Bạn sẽ nhận được thông báo khi có tin mới.
+              Bạn sẽ nhận được thông báo khi có tin mới.
             </p>
 
             <form action="" class="footer-form">
@@ -585,8 +685,6 @@
           </p>
 
           <ul class="footer-bottom-list">
-          
-
             <li>
               <a href="#" class="footer-bottom-link">Chính sách bảo mật</a>
             </li>
@@ -611,7 +709,7 @@
     <!-- 
     - custom js link
   -->
-  <script src="./assets/js/shop.js"></script>
+    <script src="./assets/js/shop.js"></script>
     <script src="./assets/js/script.js"></script>
 
     <!-- 

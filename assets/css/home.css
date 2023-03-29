@@ -235,7 +235,7 @@ transform: translateX(-50%);
   margin-block-end: -46px;
   transition: var(--transition-2);
 }
-.card-content{padding-right: 10px;}
+/* .card-content{padding-right: 10px;} */
 .top-product-card :is(.rating-wrapper, .card-title) { margin-block-end: 12px; }
 
 .top-product-card .rating-wrapper { transition: var(--transition-2); }

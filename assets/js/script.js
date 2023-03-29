@@ -97,7 +97,7 @@ for (let i = 0; i < productThumbnails.length; i++) {
 
 /* produce */
 // item filter
- 
+/*  
 const filterButtons = document.querySelector("#filter-btns").children;
 const items = document.querySelector(".grid-list").children;
  
@@ -121,5 +121,5 @@ for (let i = 0; i < filterButtons.length; i++) {
  
     })
 }
- 
+  */
  

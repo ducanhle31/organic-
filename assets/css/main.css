@@ -239,19 +239,20 @@ body {
   gap: 30px;
 }
 
-/* .rating-wrapper {
+ .rating-wrapper {
   color: var(--yellow-orange);
   display: flex;
   justify-content: var(--justify-content, center);
   gap: 2px;
   font-size: 1.4rem;
-} */
+} 
 
-.product-card {border-color: #c3f3dc; border-width: 0.5px; border-style: solid;
-  border-radius: 2px;
-  background-color:hsl(96, 36%, 95%);
-  padding: 0px 0px 20px;
+.md{font-size: 25px;}
+.product-card {border-color: #05c26a; border-width: 0.5px; border-style: solid;
  
+  background-color:hsl(0, 0%, 99%);
+
+ padding: 10px 20px;
   text-align: center;
   outline: 2px solid transparent;
   transition: var(--transition-2);
@@ -346,7 +347,7 @@ body {
 .product-card .price-wrapper .del { color: var(--battleship-gray); }
 
 .product-card .price-wrapper .price {
-  color: var(--emerald);
+  color: red;
   margin-inline-start: 5px;
 }
 
@@ -907,7 +908,7 @@ form .signup-link1 a:hover{
   position: fixed;
   bottom: 10px;
   right: 20px;
-  background-color: var(--emerald_70);
+  background-color: #05c26a;
   font-size: 2rem;
   color: var(--white);
   padding: 8px;
@@ -925,7 +926,7 @@ form .signup-link1 a:hover{
   transform: translateY(-10px);
 }
 
-.back-to-top:is(:hover, :focus) { background-color: var(--emerald); }
+.back-to-top:is(:hover, :focus) { background-color: #049a54; }
 
 
 
