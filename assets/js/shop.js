@@ -264,7 +264,17 @@ let products = [
     price: 330000,
     image: "./assets/images/products/haisan/tom-bien.webp",
   },
-
+  {
+    count: "haisan",
+    del: 430000,
+    type: "noibat",
+    title: "Tôm biển",
+    star: 5,
+    id: randomId(),
+    price: 330000,
+    image:
+      "./assets/images/products/haisan/thumb_350_b-ch-tu-c-t-i-9520524853278.jpg",
+  },
   {
     count: "raucu",
     del: 90000,
