@@ -546,7 +546,7 @@ body {
 
 /* login */
 .center1{
-  font-family: var(--ff-roboto);
+ /*  font-family: var(--ff-roboto); */
  
 }
 
@@ -557,7 +557,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-   font-family: var(--ff-roboto);
+  /*  font-family: var(--ff-roboto); */
  
 }
 
@@ -904,81 +904,65 @@ form .signup-link1 a:hover{
   #BACK TO TOP
 \*-----------------------------------*/
 
-.back-to-top {
+
+#progress {
   position: fixed;
-  bottom: 10px;
-  right: 20px;
-  background-color: #05c26a;
-  font-size: 2rem;
-  color: var(--white);
-  padding: 8px;
+  bottom: 20px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
   border-radius: 50%;
-  border: 2px solid var(--emerald);
-  opacity: 0;
-  visibility: hidden;
-  transition: var(--transition-2);
-  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
-
-.back-to-top.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(-10px);
+#progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: #001a2e;
 }
-
-.back-to-top:is(:hover, :focus) { background-color: #049a54; }
-
-
-
 
 
 /*-----------------------------------*\
   #BREADCUMB
 \*-----------------------------------*/
 
-.breadcumb-wrapper {
-  margin-top: 50px;
-  background-image: url(../images/1-custom.jpg);
-  background-repeat: no-repeat;
+.breadcumb {
+  background: url(../images/heading-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  
-  background-blend-mode: darken;
   text-align: center;
-     color: var(--emerald);
-  min-height: 250px;
-  display: grid;
-  place-content: center;
-  gap: 20px;
+  padding-top: 12rem;
+  padding-bottom: 8rem;
 }
 
-
-
-.breadcumb-list {
-  display: flex;
-  justify-content: center;
+.breadcumb h1 {
+   color:#05c26a;
+  font-size: 4rem;
 }
 
-.breadcumb-item {
-  color: #ffffff;
-  display: flex;
-   --fs-1: 3.5rem;
-  font-size: var(--fs-1);
-}
-.breadcumb-items {
-  
-  display: flex;
-   --fs-1: 3.5rem;
-  font-size: var(--fs-1);
-}
-.breadcumb-item:not(:last-child)::after {
-  content: "/";
-  margin-inline: 10px;
+.breadcumb p {
+  padding-top: 1rem;
+  font-size: 2rem;
+  color: #666;justify-content: center; display: flex;
 }
 
-.breadcumb-link { transition: var(--transition-2); }
+.breadcumb p a {
+  color: #222;
+  padding-right: .5rem;
+}
 
-.breadcumb-link:is(:hover, :focus) { color: var(--emerald); }
+.breadcumb p a:hover {
+  color:#05c26a;
+}
+
 
 /* about */
 .titles{

@@ -92,7 +92,7 @@ let products = [
     price: 220000,
     image: "./assets/images/products/hoaqua/dua-luoi.webp",
   },
-  
+
   {
     star: 5,
     count: "hoaqua",
@@ -103,6 +103,16 @@ let products = [
     title: "Lê xanh Mỹ",
     price: 230000,
     image: "./assets/images/products/hoaqua/le-xanh.webp",
+  },
+  {
+    price: 25000,
+    star: 4.5,
+    del: 40000,
+    type: "new",
+    count: "raucu",
+    id: randomId(),
+    title: "Tỏi ta",
+    image: "./assets/images/products/raucu/garlic_PNG12786.png",
   },
   {
     star: 5,
@@ -127,6 +137,16 @@ let products = [
     price: 240000,
 
     image: "./assets/images/products/hoaqua/tao.webp",
+  },
+  {
+    price: 35000,
+    star: 4.5,
+    del: 40000,
+    type: "new",
+    count: "raucu",
+    id: randomId(),
+    title: "Gừng",
+    image: "./assets/images/products/raucu/ginger_PNG16800.png",
   },
   {
     star: 4.5,
@@ -162,7 +182,16 @@ let products = [
     price: 280000,
     image: "./assets/images/products/cacloaihat/hat-dieu-kho.webp",
   },
+  {
+    price: 25000,
+    star: 4.5,
+    del: 30000,
 
+    count: "raucu",
+    id: randomId(),
+    title: "Cà chua",
+    image: "./assets/images/products/raucu/tomato.png",
+  },
   {
     count: "hat",
     del: 490000,
@@ -182,6 +211,17 @@ let products = [
     id: randomId(),
     price: 720000,
     image: "./assets/images/products/haisan/ca-hoi-ta.webp",
+  },
+  {
+    star: 5,
+    count: "hat",
+    del: 400000,
+    type: "new",
+    title: "Ngũ cốc",
+
+    id: randomId(),
+    price: 350000,
+    image: "./assets/images/products/cacloaihat/wheat_PNG108.png",
   },
   {
     count: "haisan",
@@ -204,6 +244,17 @@ let products = [
     image: "./assets/images/products/haisan/muc-thanh-hoa.webp",
   },
   {
+    star: 5,
+    count: "hat",
+    del: 200000,
+    type: "new",
+    title: "Đỗ xanh",
+
+    id: randomId(),
+    price: 150000,
+    image: "./assets/images/products/cacloaihat/OIP.jpg",
+  },
+  {
     count: "haisan",
     del: 530000,
     type: "noibat",
@@ -213,6 +264,7 @@ let products = [
     price: 330000,
     image: "./assets/images/products/haisan/tom-bien.webp",
   },
+
   {
     count: "raucu",
     del: 90000,
@@ -276,6 +328,17 @@ let products = [
     id: randomId(),
     price: 510000,
     image: "./assets/images/products/tuoisong/thit-bo-canada.webp",
+  },
+  {
+    star: 4,
+    count: "thit",
+    del: 310000,
+    type: "sale",
+    title: "Gà organic",
+
+    id: randomId(),
+    price: 230000,
+    image: "./assets/images/products/tuoisong/chicken.png",
   },
   {
     star: 4.5,
@@ -470,414 +533,6 @@ function renderUI(arr) {
 }
 
 window.onload = renderUI(products);
-
-/*  */
-/* 
-let productspreview = [
-  {
-    price: 25000,
-    star: 3.5,
-    del: 30000,
-    type: "new",
-    count: "hoaqua",
-    id: randomId(),
-    title: "Cam Navel ruột vàng",
-    image: "./assets/images/products/hoaqua/cam.webp",
-  },
-  {
-    price: 35000,
-    star: 4.5,
-    del: 40000,
-    type: "new",
-    count: "raucu",
-    id: randomId(),
-    title: "Khoai tây",
-    image: "./assets/images/products/raucu/6.png",
-  },
-  {
-    star: 4.5,
-    count: "hoaqua",
-    id: randomId(),
-    title: "Chanh tươi",
-    price: 15000,
-    type: "new",
-    del: 25000,
-    image: "./assets/images/products/raucu/chanh.webp",
-  },
-  {
-    star: 5,
-    count: "hat",
-    del: 430000,
-    type: "sale",
-    title: "Hạt điều trắng",
-
-    id: randomId(),
-    price: 330000,
-    image: "./assets/images/products/cacloaihat/hat-dieu.webp",
-  },
-  {
-    count: "hoaqua",
-    del: 60000,
-    type: "new",
-    title: "Đào đỏ mỹ ",
-    star: 3.5,
-    id: randomId(),
-    price: 55000,
-    image: "./assets/images/products/hoaqua/dao.webp",
-  },
-  {
-    star: 4,
-    title: "Dâu tây đà lạt",
-    count: "hoaqua",
-    id: randomId(),
-    price: 200000,
-
-    del: 300000,
-    image: "./assets/images/products/hoaqua/dau-tay.webp",
-  },
-  {
-    star: 4,
-    title: "Súp lơ xanh",
-    count: "raucu",
-    id: randomId(),
-    price: 200000,
-
-    del: 300000,
-    image: "./assets/images/products/raucu/5.png",
-  },
-  {
-    star: 4,
-    count: "hoaqua",
-    id: randomId(),
-    type: "noibat",
-    del: 280000,
-
-    title: "Dưa lưới nhập khẩu",
-    price: 220000,
-    image: "./assets/images/products/hoaqua/dua-luoi.webp",
-  },
-
-  {
-    star: 5,
-    count: "hoaqua",
-    id: randomId(),
-    type: "new",
-    del: 330000,
-
-    title: "Lê xanh Mỹ",
-    price: 230000,
-    image: "./assets/images/products/hoaqua/le-xanh.webp",
-  },
-  {
-    star: 5,
-    count: "hoaqua",
-    del: 290000,
-    type: "noibat",
-    title: "Nho Mỹ nhập khẩu",
-
-    id: randomId(),
-    price: 235000,
-
-    image: "./assets/images/products/hoaqua/nho.webp",
-  },
-  {
-    star: 4,
-    count: "hoaqua",
-    del: 320000,
-    type: "sale",
-    title: "Táo xanh Mỹ",
-
-    id: randomId(),
-    price: 240000,
-
-    image: "./assets/images/products/hoaqua/tao.webp",
-  },
-  {
-    star: 4.5,
-    count: "hoaqua",
-    del: 200000,
-    type: "sale",
-    title: "Vải thiều",
-
-    id: randomId(),
-    price: 90000,
-
-    image: "./assets/images/products/hoaqua/vai-thieu.webp",
-  },
-  {
-    star: 5,
-    count: "hat",
-    del: 400000,
-    type: "new",
-    title: "Hạt hạnh nhân",
-
-    id: randomId(),
-    price: 320000,
-    image: "./assets/images/products/cacloaihat/hanh-nhan.webp",
-  },
-  {
-    star: 5,
-    count: "hat",
-    del: 300000,
-
-    title: "Hạt điều khô",
-
-    id: randomId(),
-    price: 280000,
-    image: "./assets/images/products/cacloaihat/hat-dieu-kho.webp",
-  },
-
-  {
-    count: "hat",
-    del: 490000,
-    type: "noibat",
-    title: "Quả óc chó",
-    star: 5,
-    id: randomId(),
-    price: 430000,
-    image: "./assets/images/products/cacloaihat/oc-cho.webp",
-  },
-  {
-    star: 3,
-    del: 900000,
-    count: "haisan",
-    title: "Cá hồi",
-    type: "sale",
-    id: randomId(),
-    price: 720000,
-    image: "./assets/images/products/haisan/ca-hoi-ta.webp",
-  },
-  {
-    count: "haisan",
-    del: 300000,
-    star: 4.5,
-    title: "Cua bể",
-    type: "new",
-    id: randomId(),
-    price: 290000,
-    image: "./assets/images/products/haisan/cua-be.webp",
-  },
-  {
-    count: "haisan",
-    del: 230000,
-    type: "sale",
-    title: "Mực Thanh Hóa",
-    star: 3.5,
-    id: randomId(),
-    price: 130000,
-    image: "./assets/images/products/haisan/muc-thanh-hoa.webp",
-  },
-  {
-    count: "haisan",
-    del: 530000,
-    type: "noibat",
-    title: "Tôm biển",
-    star: 5,
-    id: randomId(),
-    price: 330000,
-    image: "./assets/images/products/haisan/tom-bien.webp",
-  },
-  {
-    count: "raucu",
-    del: 90000,
-    type: "new",
-    title: "Hành tây",
-    star: 4.5,
-    id: randomId(),
-    price: 55000,
-    image: "./assets/images/products/raucu/hanh-tay.webp",
-  },
-  {
-    count: "raucu",
-    del: 30000,
-
-    title: "Rau cải bẹ",
-    star: 5,
-    id: randomId(),
-    price: 23000,
-    image: "./assets/images/products/raucu/rau-cai.webp",
-  },
-  {
-    star: 5,
-    count: "raucu",
-    del: 50000,
-    type: "new",
-    title: "Súp lơ trắng",
-
-    id: randomId(),
-    price: 30000,
-    image: "./assets/images/products/raucu/sup-lo.webp",
-  },
-  {
-    star: 4.5,
-    count: "thit",
-    del: 720000,
-    type: "sale",
-    title: "Ba chỉ bò mỹ",
-
-    id: randomId(),
-    price: 570000,
-    image: "./assets/images/products/tuoisong/ba-chi-bo-my.webp",
-  },
-  {
-    star: 4,
-    count: "thit",
-    del: 310000,
-    type: "sale",
-    title: "Sườn lợn Brazil",
-
-    id: randomId(),
-    price: 230000,
-    image: "./assets/images/products/tuoisong/suon-lon-brazil.webp",
-  },
-  {
-    star: 5,
-    count: "thit",
-    del: 630000,
-    type: "sale",
-    title: "Thịt bò Canada",
-
-    id: randomId(),
-    price: 510000,
-    image: "./assets/images/products/tuoisong/thit-bo-canada.webp",
-  },
-  {
-    star: 4.5,
-    count: "thit",
-    del: 550000,
-    type: "new",
-    title: "Thịt bò mỹ",
-
-    id: randomId(),
-    price: 470000,
-    image: "./assets/images/products/tuoisong/thit-bo-my.webp",
-  },
-  {
-    star: 3.5,
-    count: "thit",
-    del: 600000,
-    type: "noibat",
-    title: "Thịt bò thăn",
-
-    id: randomId(),
-    price: 570000,
-    image: "./assets/images/products/tuoisong/thit-bo-than.webp",
-  },
-  {
-    star: 4,
-    count: "thit",
-    del: 230000,
-    type: "new",
-    title: "Thịt lợn nạc vai",
-
-    id: randomId(),
-    price: 170000,
-    image: "./assets/images/products/tuoisong/thit-lon-lac-vai.webp",
-  },
-  {
-    star: 4,
-    count: "thit",
-    del: 530000,
-
-    title: "Thịt bò Kobe",
-    type: "noibat",
-    id: randomId(),
-    price: 520000,
-    image: "./assets/images/products/tuoisong/9288725449286883500.webp",
-  },
-  {
-    star: 5,
-    count: "raucu",
-    del: 1300000,
-    type: "noibat",
-    title: "Nấm linh chi",
-
-    id: randomId(),
-    price: 990000,
-    image: "./assets/images/products/raucu/babaucothesudungnamlinhchimotc.webp",
-  },
-  {
-    star: 5,
-    count: "hoaqua",
-    del: 90000,
-    type: "noibat",
-    title: "Chôm chôm",
-
-    id: randomId(),
-    price: 70000,
-    image: "./assets/images/products/hoaqua/chomchom.webp",
-  },
-  {
-    count: "hoaqua",
-    del: 70000,
-    star: 5,
-    title: "Dứa vàng",
-    type: "sale",
-    id: randomId(),
-    price: 50000,
-    image: "./assets/images/products/hoaqua/imagepineapple5.webp",
-  },
-  {
-    count: "hoaqua",
-    del: 300000,
-    type: "noibat",
-    title: "Chery nhập khẩu",
-    star: 5,
-    id: randomId(),
-    price: 270000,
-    image: "./assets/images/products/hoaqua/congdungcuaquacherry3jpeg.webp",
-  },
-  {
-    count: "hoaqua",
-    del: 450000,
-    star: 5,
-    title: "Chuối Laba nhập Thái lan",
-    type: "sale",
-    id: randomId(),
-    price: 370000,
-    image: "./assets/images/products/hoaqua/227331.webp",
-  },
-  {
-    count: "hoaqua",
-    del: 300000,
-    star: 3.5,
-    title: "Lựu đỏ Nam Phi",
-    type: "noibat",
-    id: randomId(),
-    price: 170000,
-    image: "./assets/images/products/hoaqua/product7600x600.webp",
-  },
-];
-
-let productsPreview = document.querySelector(".productsPreview");
-function renderUI(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    const p = arr[i];
-  productsPreview.innerHTML += `
-            <div class="preview" data-target="${p.id}">
-      <i class="fas fa-times"></i>
-      <img src="${p.image}" alt="">
-      <h3>${p.title}</h3>
-      <div class="stars">
-        ${countStar(p.star)}
-        
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-      <div class="price">${p.price}</div>
-      <div class="buttons">
-         <a href="#" class="buy">buy now</a>
-         <a href="#" class="cart">add to cart</a>
-      </div>
-   </div>
-        `;
-  }
-}
-
-window.onload = renderUI(productsPreview);
-
-
- */
-
 
 
 /*  */
