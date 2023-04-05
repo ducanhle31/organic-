@@ -16,7 +16,7 @@
   -->
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/home.css" />
-
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <!-- 
     - google font link
   -->
@@ -110,10 +110,12 @@
               aria-label="Open shopping cart"
               data-panel-btn="cart"
             >
-              <ion-icon name="basket-outline"></ion-icon>
+               <ion-icon id="cart" name="basket-outline"></ion-icon>
 
-              <data class="btn-badge" value="2">02</data>
+              <data class="btn-badge cart-quantity" value="2">0</data>
+          
             </button>
+           
           </div>
         </div>
       </div>
@@ -123,6 +125,7 @@
     - #ASIDE
   -->
 
+  
     <aside class="aside">
       <div class="center1">
         <input type="checkbox" id="show1" />
@@ -234,6 +237,7 @@
 
     <main>
       <article>
+
         <!-- 
         - #HERO
       -->
@@ -269,7 +273,11 @@
           </div>
         </section>
 
-      
+
+
+
+
+
         <!-- 
         - #OFFERS
       -->
@@ -348,6 +356,10 @@
           </div>
         </section>
 
+ 
+
+
+
         <!-- 
         - #TOP PRODUCT
       -->
@@ -359,61 +371,10 @@
               <img src="./assets/images/back-ground/bg_title.png" alt="" />
             </center>
 
-            <ul class="top-product-list grid-list topproducts">
-            <!--   <li class="top-product-item">
-                <div class="product-card top-product-card">
-                  <figure class="card-banner">
-                    <img
-                      src="./assets/images/products/hoaqua/cam.webp"
-                      width="100"
-                      height="100"
-                      loading="lazy"
-                      alt="Fresh Orangey"
-                    />
-
-                    <div class="btn-wrapper">
-                      <button class="product-btn" aria-label="Add to Whishlist">
-                        <a href="./../../cart.html">
-                          <ion-icon name="basket-outline"></ion-icon>
-                        </a>
-
-                        <div class="tooltip">Mua ngay</div>
-                      </button>
-
-                      <button class="product-btn" aria-label="Quick View">
-                        <a href="./product-details.html">
-                          <ion-icon name="eye-outline"></ion-icon
-                        ></a>
-                        <div class="tooltip">Xem thêm</div>
-                      </button>
-                    </div>
-                  </figure>
-
-                  <div class="card-content">
-                    <div class="rating-wrapper">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                    <h3 class="h4 card-title">
-                      <a href="./product-details.html">Cam Navel ruột vàng</a>
-                    </h3>
-
-                    <div class="price-wrapper">
-                      <del class="del">$95.00</del>
-
-                      <data class="price" value="85.00">$85.00</data>
-                    </div>
-                  </div>
-                </div>
-              </li>
- -->
-       
-            </ul>
-          </div>
+            <ul class="top-product-list grid-list topproducts items-container">
+           
+            </ul>  
+         
         </section>
 
         <!-- 
@@ -474,56 +435,11 @@
               </li>
             </ul>
 
-            <div class="grid-list topproduct">
-              <div class="product-card" data-id="hoaqua">
-                <figure class="card-banner">
-                  <img
-                    src="./assets/images/products/hoaqua/cam.webp"
-                    width="189"
-                    height="189"
-                    loading="lazy"
-                    alt="Fresh Orangey"
-                  />
-
-                  <div class="btn-wrapper">
-                    <button class="product-btn" aria-label="Add to Whishlist">
-                      <a href="./../../cart.html">
-                        <ion-icon name="basket-outline"></ion-icon>
-                      </a>
-
-                      <div class="tooltip">Mua ngay</div>
-                    </button>
-
-                    <button class="product-btn" aria-label="Quick View">
-                      <a href="./product-details.html">
-                        <ion-icon name="eye-outline"></ion-icon
-                      ></a>
-                      <div class="tooltip">Xem thêm</div>
-                    </button>
-                  </div>
-                </figure>
-                <div class="rating-wrapper">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">
-                  <a href="./product-details.html">Cam Navel ruột vàng</a>
-                </h3>
-
-                <div class="price-wrapper">
-                  <del class="del">$95.00</del>
-
-                  <data class="price" value="85.00">$85.00</data>
-                </div>
-              </div>
-
-           
-           
+            <div class="lista grid-list items-container ">
+              
             </div>
+            
+           
           </div>
         </section>
 
@@ -621,205 +537,271 @@
             <center style="margin-bottom: 25px; margin-top: -25px">
               <img src="./assets/images/back-ground/bg_title.png" alt="" />
             </center>
-            <ul class="has-scrollbar">
-              <li class="testi-item">
-                <div class="testi-card">
-                  <div class="card-header">
-                    <img
-                      src="./assets/images/quote-left.png"
-                      width="25"
-                      height="25"
-                      aria-hidden="true"
-                      alt=""
-                    />
+           
 
-                    <img
-                      src="./assets/images/testimonial-1.jpg"
-                      width="90"
-                      height="90"
-                      loading="lazy"
-                      alt="Willow Peralta"
-                      class="card-avatar"
-                    />
+            <div class="slide-container swiper">
+              <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                  <div class="card swiper-slide">
+                    <li class="testi-item">
+                      <div class="testi-card">
+                        <div class="card-header">
+                          <img
+                            src="./assets/images/quote-left.png"
+                            width="25"
+                            height="25"
+                            aria-hidden="true"
+                            alt=""
+                          />
 
-                    <img
-                      src="./assets/images/quote-right.png"
-                      width="25"
-                      height="25"
-                      aria-hidden="true"
-                      alt=""
-                    />
+                          <img
+                            src="./assets/images/brand/profile1.jpg"
+                            width="90"
+                            height="90"
+                            loading="lazy"
+                            alt="Pamelia Hamrick"
+                            class="card-avatar"
+                          />
+
+                          <img
+                            src="./assets/images/quote-right.png"
+                            width="25"
+                            height="25"
+                            aria-hidden="true"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <blockquote class="card-text">
+                          Nhờ có Organic tôi đã yên tâm chọn lựa những món thực
+                          phẩm đầy dinh dưỡng và đảm bảo sức khỏe dành đến cho
+                          gia đình thân yêu.
+                        </blockquote>
+
+                        <h3 class="card-title">Minh Tâm</h3>
+
+                        <p class="card-subtitle">Designer</p>
+                      </div>
+                    </li>
                   </div>
+                  <div class="card swiper-slide">
+                    <li class="testi-item">
+                      <div class="testi-card">
+                        <div class="card-header">
+                          <img
+                            src="./assets/images/quote-left.png"
+                            width="25"
+                            height="25"
+                            aria-hidden="true"
+                            alt=""
+                          />
 
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                          <img
+                            src="./assets/images/brand/profile2.jpg"
+                            width="90"
+                            height="90"
+                            loading="lazy"
+                            alt="Pamelia Hamrick"
+                            class="card-avatar"
+                          />
+
+                          <img
+                            src="./assets/images/quote-right.png"
+                            width="25"
+                            height="25"
+                            aria-hidden="true"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <blockquote class="card-text">
+                          Nhờ có Organic tôi đã yên tâm chọn lựa những món thực
+                          phẩm đầy dinh dưỡng và đảm bảo sức khỏe dành đến cho
+                          gia đình thân yêu.
+                        </blockquote>
+
+                        <h3 class="card-title">Minh Thúy</h3>
+
+                        <p class="card-subtitle">Designer</p>
+                      </div>
+                    </li>
                   </div>
+                  <div class="card swiper-slide">
+                    <li class="testi-item">
+                      <div class="testi-card">
+                        <div class="card-header">
+                          <img
+                            src="./assets/images/quote-left.png"
+                            width="25"
+                            height="25"
+                            aria-hidden="true"
+                            alt=""
+                          />
 
-                  <blockquote class="card-text">
-                    Chúng tôi rất hài lòng về sản phẩm của công ty. Cảm ơn bạn
-                    đã mang đến sản phẩm tuyệt vời như vậy. Chúng tôi sẽ tiếp
-                    tục mua.
-                  </blockquote>
+                          <img
+                            src="./assets/images/brand/profile3.jpg"
+                            width="90"
+                            height="90"
+                            loading="lazy"
+                            alt="Pamelia Hamrick"
+                            class="card-avatar"
+                          />
 
-                  <h3 class="card-title">Minh Đức</h3>
+                          <img
+                            src="./assets/images/quote-right.png"
+                            width="25"
+                            height="25"
+                            aria-hidden="true"
+                            alt=""
+                          />
+                        </div>
 
-                  <p class="card-subtitle">Developer</p>
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <blockquote class="card-text">
+                          Nhờ có Organic tôi đã yên tâm chọn lựa những món thực
+                          phẩm đầy dinh dưỡng và đảm bảo sức khỏe dành đến cho
+                          gia đình thân yêu.
+                        </blockquote>
+
+                        <h3 class="card-title">Tâm</h3>
+
+                        <p class="card-subtitle">Designer</p>
+                      </div>
+                    </li>
+                  </div>
+                     <div class="card swiper-slide">
+                    <li class="testi-item">
+                      <div class="testi-card">
+                        <div class="card-header">
+                          <img
+                            src="./assets/images/quote-left.png"
+                            width="25"
+                            height="25"
+                            aria-hidden="true"
+                            alt=""
+                          />
+
+                          <img
+                            src="./assets/images/brand/profile4.jpg"
+                            width="90"
+                            height="90"
+                            loading="lazy"
+                            alt="Pamelia Hamrick"
+                            class="card-avatar"
+                          />
+
+                          <img
+                            src="./assets/images/quote-right.png"
+                            width="25"
+                            height="25"
+                            aria-hidden="true"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <blockquote class="card-text">
+                          Nhờ có Organic tôi đã yên tâm chọn lựa những món thực
+                          phẩm đầy dinh dưỡng và đảm bảo sức khỏe dành đến cho
+                          gia đình thân yêu.
+                        </blockquote>
+
+                        <h3 class="card-title">Minh Tú</h3>
+
+                        <p class="card-subtitle">Designer</p>
+                      </div>
+                    </li>
+                  </div>
+                    <div class="card swiper-slide">
+                    <li class="testi-item">
+                      <div class="testi-card">
+                        <div class="card-header">
+                          <img
+                            src="./assets/images/quote-left.png"
+                            width="25"
+                            height="25"
+                            aria-hidden="true"
+                            alt=""
+                          />
+
+                          <img
+                            src="./assets/images/brand/profile7.jpg"
+                            width="90"
+                            height="90"
+                            loading="lazy"
+                            alt="Pamelia Hamrick"
+                            class="card-avatar"
+                          />
+
+                          <img
+                            src="./assets/images/quote-right.png"
+                            width="25"
+                            height="25"
+                            aria-hidden="true"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <blockquote class="card-text">
+                          Nhờ có Organic tôi đã yên tâm chọn lựa những món thực
+                          phẩm đầy dinh dưỡng và đảm bảo sức khỏe dành đến cho
+                          gia đình thân yêu.
+                        </blockquote>
+
+                        <h3 class="card-title">Hà Duy</h3>
+
+                        <p class="card-subtitle">Designer</p>
+                      </div>
+                    </li>
+                  </div>
                 </div>
-              </li>
+                
+              </div>
 
-              <li class="testi-item">
-                <div class="testi-card">
-                  <div class="card-header">
-                    <img
-                      src="./assets/images/quote-left.png"
-                      width="25"
-                      height="25"
-                      aria-hidden="true"
-                      alt=""
-                    />
-
-                    <img
-                      src="./assets/images/testimonial-2.jpg"
-                      width="90"
-                      height="90"
-                      loading="lazy"
-                      alt="Pamelia Hamrick"
-                      class="card-avatar"
-                    />
-
-                    <img
-                      src="./assets/images/quote-right.png"
-                      width="25"
-                      height="25"
-                      aria-hidden="true"
-                      alt=""
-                    />
-                  </div>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <blockquote class="card-text">
-                    Nhờ có Organic tôi đã yên tâm chọn lựa những món thực phẩm
-                    đầy dinh dưỡng và đảm bảo sức khỏe dành đến cho gia đình
-                    thân yêu.
-                  </blockquote>
-
-                  <h3 class="card-title">Minh Tâm</h3>
-
-                  <p class="card-subtitle">Designer</p>
-                </div>
-              </li>
-
-              <li class="testi-item">
-                <div class="testi-card">
-                  <div class="card-header">
-                    <img
-                      src="./assets/images/quote-left.png"
-                      width="25"
-                      height="25"
-                      aria-hidden="true"
-                      alt=""
-                    />
-
-                    <img
-                      src="./assets/images/testimonial-3.jpg"
-                      width="90"
-                      height="90"
-                      loading="lazy"
-                      alt="Novella Gerber"
-                      class="card-avatar"
-                    />
-
-                    <img
-                      src="./assets/images/quote-right.png"
-                      width="25"
-                      height="25"
-                      aria-hidden="true"
-                      alt=""
-                    />
-                  </div>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <blockquote class="card-text">
-                    Tôi đã yên tâm hoàn toàn khi mua đồ về để dự trữ, thực phẩm
-                    vẫn luôn tươi ngon mỗi khi lấy ra từ tủ lạnh.
-                  </blockquote>
-
-                  <h3 class="card-title">Thùy Linh</h3>
-
-                  <p class="card-subtitle">Ceo of that</p>
-                </div>
-              </li>
-              <li class="testi-item">
-                <div class="testi-card">
-                  <div class="card-header">
-                    <img
-                      src="./assets/images/quote-left.png"
-                      width="25"
-                      height="25"
-                      aria-hidden="true"
-                      alt=""
-                    />
-
-                    <img
-                      src="./assets/images/testimonial-2.jpg"
-                      width="90"
-                      height="90"
-                      loading="lazy"
-                      alt="Pamelia Hamrick"
-                      class="card-avatar"
-                    />
-
-                    <img
-                      src="./assets/images/quote-right.png"
-                      width="25"
-                      height="25"
-                      aria-hidden="true"
-                      alt=""
-                    />
-                  </div>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <blockquote class="card-text">
-                    Nhờ có Organic tôi đã yên tâm chọn lựa những món thực phẩm
-                    đầy dinh dưỡng và đảm bảo sức khỏe dành đến cho gia đình
-                    thân yêu.
-                  </blockquote>
-
-                  <h3 class="card-title">Minh Tâm</h3>
-
-                  <p class="card-subtitle">Designer</p>
-                </div>
-              </li>
-            </ul>
+              <div class="swiper-button-next swiper-navBtn"></div>
+              <div class="swiper-button-prev swiper-navBtn"></div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </section>
-
-
 
         <!-- 
         - #BLOG
@@ -976,7 +958,7 @@
           </div>
         </section>
 
-          <!-- 
+        <!-- 
         - #SERVICE
       -->
 
@@ -1082,25 +1064,19 @@
             <ul class="social-list">
               <li>
                 <a href="#" class="social-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
+                  <img src="./assets/images/btn/user-1.svg" alt="" />
                 </a>
               </li>
 
               <li>
                 <a href="#" class="social-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
+                  <img src="./assets/images/btn/user-2.svg" alt="" />
                 </a>
               </li>
 
               <li>
                 <a href="#" class="social-link">
-                  <ion-icon name="logo-skype"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-linkedin"></ion-icon>
+                  <img src="./assets/images/btn/user-3.svg" alt="" />
                 </a>
               </li>
             </ul>
@@ -1124,11 +1100,11 @@
             </li>
 
             <li>
-              <a href="./shop.html" class="footer-link">Liên hệ</a>
+              <a href="./contact.html" class="footer-link">Liên hệ</a>
             </li>
 
             <li>
-              <a href="./contact.html" class="footer-link">404</a>
+              <a href="./404.html" class="footer-link">404</a>
             </li>
           </ul>
 
@@ -1205,18 +1181,14 @@
       </div>
     </footer>
 
-    <!-- 
-    - #BACK TO TOP
-  -->
-
-    <div id="progress">
-      <span id="progress-value">&#x1F815;</span>
-    </div>
+    
     <!-- 
     - custom js link
   -->
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/script.js"></script>
+
     <!-- 
     - ionicon link
   -->
