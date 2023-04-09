@@ -102,3 +102,68 @@ emailForm.addEventListener("focusout", inputEmail);
 
 
 
+"use strict";
+
+// all initial elements
+const decrementBtn = document.querySelectorAll("#decrement");
+const quantityElem = document.querySelectorAll("#quantity");
+const incrementBtn = document.querySelectorAll("#increment");
+const priceElem = document.querySelectorAll("#price");
+
+
+const totalElem = document.querySelector("#total");
+
+// loop: for add event on multiple `increment` & `decrement` button
+for (let i = 0; i < incrementBtn.length; i++) {
+  incrementBtn[i].addEventListener("click", function () {
+    // collect the value of `quantity` textContent,
+    // based on clicked `increment` button sibling.
+    let increment = Number(this.previousElementSibling.textContent);
+
+    // plus `increment` variable value by 1
+    increment++;
+
+    // show the `increment` variable value on `quantity` element
+    // based on clicked `increment` button sibling.
+    this.previousElementSibling.textContent = increment;
+
+    totalCalc();
+  });
+
+  decrementBtn[i].addEventListener("click", function () {
+    // collect the value of `quantity` textContent,
+    // based on clicked `decrement` button sibling.
+    let decrement = Number(this.nextElementSibling.textContent);
+
+    // minus `decrement` variable value by 1 based on condition
+    decrement <= 1 ? 1 : decrement--;
+
+    // show the `decrement` variable value on `quantity` element
+    // based on clicked `decrement` button sibling.
+    this.nextElementSibling.textContent = decrement;
+
+    totalCalc();
+  });
+}
+
+// function: for calculating total amount of product price
+const totalCalc = function () {
+  // declare all initial variable
+
+ 
+ 
+  let total = 0;
+
+  // loop: for calculating `subtotal` value from every single product
+  for (let i = 0; i < quantityElem.length; i++) {
+   total +=
+     Number(quantityElem[i].textContent) * Number(priceElem[i].textContent);
+  }
+
+  // show the `subtotal` variable value on `subtotalElem` element
+   totalElem.textContent = total.toFixed(3);
+  
+};
+
+
+

@@ -33,7 +33,6 @@
     <!-- 
     - #HEADER
   -->
-
     <header class="header" data-header>
       <div class="nav-wrapper">
         <div class="container">
@@ -105,16 +104,18 @@
             <label for="show1" class="show-btn1 header-action-btn">
               <ion-icon name="person-outline"></ion-icon
             ></label>
-
-            <button
-              class="header-action-btn"
+<div class="cart_items">   <button
+              class="header-action-btn cart__counter"
               aria-label="Open shopping cart"
               data-panel-btn="cart"
             >
-              <ion-icon name="basket-outline"></ion-icon>
-
-              <data class="btn-badge" value="2">02</data>
-            </button>
+               <ion-icon id="cart" name="basket-outline"></ion-icon>
+  <span class="btn-badge cart-quantity" id="total__counter">0</span>
+             
+          
+            </button></div>
+         
+           
           </div>
         </div>
       </div>
@@ -124,6 +125,7 @@
     - #ASIDE
   -->
 
+  
     <aside class="aside">
       <div class="center1">
         <input type="checkbox" id="show1" />
@@ -164,7 +166,7 @@
         </div>
       </div>
 
-      <div class="side-panel" data-side-panel="cart">
+      <div class="side-panel cart" data-side-panel="cart">
         <button
           class="panel-close-btn"
           aria-label="Close cart"
@@ -173,65 +175,20 @@
           <ion-icon name="close-outline"></ion-icon>
         </button>
 
-        <ul class="panel-list">
-          <li class="panel-item">
-            <a href="./product-details.html" class="panel-card">
-              <figure class="item-banner">
-                <img
-                  src="./assets/images/product-small-1.jpg"
-                  width="46"
-                  height="46"
-                  loading="lazy"
-                  alt="Bright Side Vegetarian"
-                />
-              </figure>
-
-              <div>
-                <p class="item-title">Bright Side Vegetarian</p>
-
-                <span class="item-value">$20.15x1</span>
-              </div>
-
-              <button class="item-close-btn" aria-label="Remove item">
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
-            </a>
-          </li>
-
-          <li class="panel-item">
-            <a href="./product-details.html" class="panel-card">
-              <figure class="item-banner">
-                <img
-                  src="./assets/images/product-small-2.jpg"
-                  width="46"
-                  height="46"
-                  loading="lazy"
-                  alt="Eco Vegetable"
-                />
-              </figure>
-
-              <div>
-                <p class="item-title">Eco Vegetable</p>
-
-                <span class="item-value">$13.25x2</span>
-              </div>
-
-              <button class="item-close-btn" aria-label="Remove item">
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
-            </a>
-          </li>
+        <ul class="panel-list cart__items">
         </ul>
 
         <div class="subtotal">
-          <p class="subtotal-text">Subtotal:</p>
+          <p class="subtotal-text">Tổng cộng:</p>
 
-          <data class="subtotal-value" value="215.14">$215.14</data>
+          <data class="subtotal-value total__cost" >0 VND</data>
+         
         </div>
 
-        <a href="./cart.html" class="panel-btn">View Cart</a>
+        <a href="./cart.html" class="panel-btn check_out_btn">Thanh toán</a>
       </div>
     </aside>
+
 
     <main>
       <article>
@@ -371,19 +328,19 @@
             <ul class="social-list">
               <li>
                 <a href="#" class="social-link">
-                 <img src="./assets/images/btn/user-1.svg" alt="">
+                 <img src="./assets/images/btn/user-1.svg"width="30px" height="30px" alt="">
                 </a>
               </li>
 
               <li>
                 <a href="#" class="social-link">
-                <img src="./assets/images/btn/user-2.svg" alt="">
+                <img src="./assets/images/btn/user-2.svg"width="30px" height="30px" alt="">
                 </a>
               </li>
 
               <li>
                 <a href="#" class="social-link">
-                 <img src="./assets/images/btn/user-3.svg" alt="">
+                 <img src="./assets/images/btn/user-3.svg"width="30px" height="30px" alt="">
                 </a>
               </li>
 
@@ -412,9 +369,7 @@
               <a href="./contact.html" class="footer-link">Liên hệ</a>
             </li>
 
-            <li>
-              <a href="./404.html" class="footer-link">404</a>
-            </li>
+          
           </ul>
 
           <ul class="footer-list">

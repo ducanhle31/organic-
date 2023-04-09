@@ -206,6 +206,14 @@ margin-top: 10px;
 
 .w-100 { width: 100%; height: 250px; }
 
+.section-subtitle {
+  color: var(--emerald);
+  font-family: var(--ff-playfair-display);
+  font-size: var(--fs-3);
+  font-style: italic;
+  margin-block-end: 10px;
+}
+
 .has-scrollbar {
   display: flex;
   overflow-x: auto;
@@ -222,14 +230,6 @@ margin-top: 10px;
 }
 
 .has-scrollbar:hover::-webkit-scrollbar-thumb { background-color: var(--black_25); }
-
-.section-subtitle {
-  color: var(--emerald);
-  font-family: var(--ff-playfair-display);
-  font-size: var(--fs-3);
-  font-style: italic;
-  margin-block-end: 10px;
-}
 
 .section-subtitle,
 .section-title { text-align: center; }
@@ -682,7 +682,7 @@ form .signup-link1 a:hover{
   top: 0;
   right: -300px;
   background-color: var(--white);
-  max-width: 300px;
+  max-width: 320px;
   width: 100%;
   height: 100%;
   padding: 100px 20px 25px;
@@ -745,6 +745,44 @@ form .signup-link1 a:hover{
 
 .panel-item .item-close-btn ion-icon { --ionicon-stroke-width: 25px; }
 
+
+ .btn__small {
+    padding: 5px 5px;
+    border-radius: 10px;
+    border: 0px;
+    background: #40a832e5;
+    color: #fff;
+   margin: 5px;
+
+    font-size: 18px;
+    cursor: pointer;
+} 
+.product__name{
+  font-size: 18px;
+}
+.tru{ margin-left: -5px;}
+#product__price{ margin-left: 10px; color: red;
+font-size: 20px;}
+.btn_remove{
+  margin-left: 10px;
+background-color: red;
+
+}
+.cart_item{
+  display: flex;
+  
+}
+.card-small{
+  display: flex; flex-direction: column; align-items: flex-start;
+}
+.btn-card-small{display: flex; margin-top: 0px; align-items: center;}
+ .topcard-small{
+  display: flex;
+ 
+ }
+
+
+
 .side-panel .subtotal {
   display: flex;
   justify-content: space-between;
@@ -758,7 +796,7 @@ form .signup-link1 a:hover{
 }
 
 .side-panel .subtotal-value {
-  color: var(--emerald);
+  color: red;
   font-size: var(--fs-3);
   font-weight: var(--fw-700);
 }
@@ -916,7 +954,7 @@ form .signup-link1 a:hover{
   box-sizing: border-box;
   font-size: 1.2rem;
   line-height: 2rem;
-  padding: 5px;
+ 
   width: 60px;
   height: 60px;
   right: 50px;
@@ -933,17 +971,10 @@ z-index: 100;
 .scroll-button{ font-size: 40px; padding-top: 15px;
   background:#ffffff;
   border: solid 5px #05c26a;
-  color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0); border-radius: 50%; position: fixed;
 }
 
 
-.scroll-button{
-  border-radius: 50%;
-}
-
-.scroll-button{
-  position: fixed;
-}
 
 .scroll-button:hover{ color: #000000; background-color: #ffffff;
   opacity: 1;

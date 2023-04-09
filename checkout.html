@@ -32,7 +32,6 @@
     <!-- 
     - #HEADER
   -->
-
     <header class="header" data-header>
       <div class="nav-wrapper">
         <div class="container">
@@ -59,13 +58,13 @@
               <li>
                 <a href="./index.html" class="navbar-link">Trang chủ</a>
               </li>
-
               <li>
                 <a href="./shop.html" class="navbar-link">Sản phẩm</a>
               </li>
               <li>
                 <a href="./about.html" class="navbar-link">Giới thiệu</a>
               </li>
+
               <li>
                 <a href="./blog.html" class="navbar-link">Tin tức</a>
               </li>
@@ -104,16 +103,18 @@
             <label for="show1" class="show-btn1 header-action-btn">
               <ion-icon name="person-outline"></ion-icon
             ></label>
-
-            <button
-              class="header-action-btn"
+<div class="cart_items">   <button
+              class="header-action-btn cart__counter"
               aria-label="Open shopping cart"
               data-panel-btn="cart"
             >
-              <ion-icon name="basket-outline"></ion-icon>
-
-              <data class="btn-badge" value="2">02</data>
-            </button>
+               <ion-icon id="cart" name="basket-outline"></ion-icon>
+  <span class="btn-badge cart-quantity" id="total__counter">0</span>
+             
+          
+            </button></div>
+         
+           
           </div>
         </div>
       </div>
@@ -123,6 +124,7 @@
     - #ASIDE
   -->
 
+  
     <aside class="aside">
       <div class="center1">
         <input type="checkbox" id="show1" />
@@ -163,7 +165,7 @@
         </div>
       </div>
 
-      <div class="side-panel" data-side-panel="cart">
+      <div class="side-panel cart" data-side-panel="cart">
         <button
           class="panel-close-btn"
           aria-label="Close cart"
@@ -172,64 +174,20 @@
           <ion-icon name="close-outline"></ion-icon>
         </button>
 
-        <ul class="panel-list">
-          <li class="panel-item">
-            <a href="./product-details.html" class="panel-card">
-              <figure class="item-banner">
-                <img
-                  src="./assets/images/product-small-1.jpg"
-                  width="46"
-                  height="46"
-                  alt="Bright Side Vegetarian"
-                />
-              </figure>
-
-              <div>
-                <p class="item-title">Bright Side Vegetarian</p>
-
-                <span class="item-value">$20.15x1</span>
-              </div>
-
-              <button class="item-close-btn" aria-label="Remove item">
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
-            </a>
-          </li>
-
-          <li class="panel-item">
-            <a href="./product-details.html" class="panel-card">
-              <figure class="item-banner">
-                <img
-                  src="./assets/images/product-small-2.jpg"
-                  width="46"
-                  height="46"
-                  loading="lazy"
-                  alt="Eco Vegetable"
-                />
-              </figure>
-
-              <div>
-                <p class="item-title">Eco Vegetable</p>
-
-                <span class="item-value">$13.25x2</span>
-              </div>
-
-              <button class="item-close-btn" aria-label="Remove item">
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
-            </a>
-          </li>
+        <ul class="panel-list cart__items">
         </ul>
 
         <div class="subtotal">
-          <p class="subtotal-text">Subtotal:</p>
+          <p class="subtotal-text">Tổng cộng:</p>
 
-          <data class="subtotal-value" value="215.14">$215.14</data>
+          <data class="subtotal-value total__cost" >0 VND</data>
+         
         </div>
 
-        <a href="./cart.html" class="panel-btn">View Cart</a>
+        <a href="./cart.html" class="panel-btn">Thanh toán</a>
       </div>
     </aside>
+
 
     <main>
       <article>
@@ -242,6 +200,30 @@
     <p> <a href="./index.html">Trang chủ >></a>Thanh toán</p>
  
 </div>
+  <!-- 
+        - #PRODUCT
+      -->
+
+        <section class="section products" hidden>
+          <div class="container col-container">
+          
+
+            <div class="container-right">
+            
+              <div class="grid-list list-product products" id="root">
+             
+              
+
+              
+                
+
+               
+              </div>
+
+              <div class="pagination"></div>
+            </div>
+          </div>
+        </section>
 
 <section class="container">
 
@@ -300,20 +282,61 @@
                 <div class="pay__calc pay__calc--active">
                   <p class="pay__title">Thành Tiền</p>
                   <div class="pay__item">
-                    <p>Khoai tây <span>x1</span></p>
-                    <p>150,000 vnd</p>
+                    <p>Khoai tây </p> 
+                    <div class="product-qty">
+                    <button id="decrement">
+                      <ion-icon name="remove-outline"></ion-icon>
+                    </button>
+
+                    <span id="quantity">1</span>
+
+                    <button id="increment">
+                      <ion-icon name="add-outline"></ion-icon>
+                    </button>
+                  </div>
+                     <div class="price">
+                    <span id="price">25.000 </span>  VND
+                  </div>
                   </div>
                   <div class="pay__item">
-                    <p>Bò kobe  <span>x1</span></p>
-                    <p>400,000 vnd</p>
+                    <p>Sườn lợn</p>
+                      <div class="product-qty">
+                    <button id="decrement">
+                      <ion-icon name="remove-outline"></ion-icon>
+                    </button>
+
+                    <span id="quantity">1</span>
+
+                    <button id="increment">
+                      <ion-icon name="add-outline"></ion-icon>
+                    </button>
                   </div>
-                  <div class="pay__item">
-                    <p>Cá hồi<span>x1</span></p>
-                    <p>720,000 vnd</p>
+                     <div class="price">
+                    <span id="price">250.000</span>VND
+                  </div>
+                  </div>
+                   <div class="pay__item">
+                   <p> Thịt bò Mỹ </p>
+                    <div class="product-qty">
+                    <button id="decrement">
+                      <ion-icon name="remove-outline"></ion-icon>
+                    </button>
+
+                    <span id="quantity">1</span>
+
+                    <button id="increment">
+                      <ion-icon name="add-outline"></ion-icon>
+                    </button>
+                  </div>
+                     <div class="price">
+                    <span id="price">450.000</span>VND
+                  </div>
                   </div>
                   <div class="pay__total">
-                    <p>Tổng cộng:</p>
-                    <p>300,000 vnd</p>
+                    <div class="total">
+              <p>Tổng tiền :</p>
+               <span> <span id="total">725.000</span>VND</span>
+            </div>
                   </div>
                 </div>
                 <div class="pay__method pay__method--active">
@@ -335,7 +358,8 @@
                   </div>
                
                 </div>
-                <button class="pay__paynow "> <a href="./success.html">Thanh Toán</a></button>
+                <a href="./index.html" class="pay__paynow check_out_btn">Thanh Toán</a>
+                
               </div>
        
     </div>
@@ -399,19 +423,19 @@
              <ul class="social-list">
               <li>
                 <a href="#" class="social-link">
-                 <img src="./assets/images/btn/user-1.svg" alt="">
+                 <img src="./assets/images/btn/user-1.svg"width="30px" height="30px" alt="">
                 </a>
               </li>
 
               <li>
                 <a href="#" class="social-link">
-                <img src="./assets/images/btn/user-2.svg" alt="">
+                <img src="./assets/images/btn/user-2.svg"width="30px" height="30px" alt="">
                 </a>
               </li>
 
               <li>
                 <a href="#" class="social-link">
-                 <img src="./assets/images/btn/user-3.svg" alt="">
+                 <img src="./assets/images/btn/user-3.svg"width="30px" height="30px" alt="">
                 </a>
               </li>
 
@@ -440,9 +464,7 @@
               <a href="./contact.html" class="footer-link">Liên hệ</a>
             </li>
 
-            <li>
-              <a href="./404.html" class="footer-link">404</a>
-            </li>
+           
           </ul>
 
           <ul class="footer-list">
@@ -522,9 +544,10 @@
     <!-- 
     - custom js link
   -->
+  <script src="./assets/js/index.js"></script>
 <script src="./assets/js/checkout.js"></script>
-    <script src="./assets/js/script.js"></script>
-
+   <script src="./assets/js/add-to-card.js"></script>
+<script src="./assets/js/script.js"></script>
     <!-- 
     - ionicon link
   -->

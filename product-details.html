@@ -20,6 +20,7 @@
  
 <link rel="stylesheet" href="./assets/css/home.css" />
  <link rel="stylesheet" href="./assets/css/product-details.css">
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
   <!-- 
     - google font link
   -->
@@ -36,7 +37,7 @@
     - #HEADER
   -->
 
-  <header class="header" data-header>
+      <header class="header" data-header>
       <div class="nav-wrapper">
         <div class="container">
           <h1 class="h1">
@@ -62,14 +63,12 @@
               <li>
                 <a href="./index.html" class="navbar-link">Trang chủ</a>
               </li>
-    <li>
+              <li>
                 <a href="./shop.html" class="navbar-link">Sản phẩm</a>
               </li>
               <li>
                 <a href="./about.html" class="navbar-link">Giới thiệu</a>
               </li>
-
-          
 
               <li>
                 <a href="./blog.html" class="navbar-link">Tin tức</a>
@@ -109,176 +108,90 @@
             <label for="show1" class="show-btn1 header-action-btn">
               <ion-icon name="person-outline"></ion-icon
             ></label>
-
-            <button
-              class="header-action-btn"
+<div class="cart_items">   <button
+              class="header-action-btn cart__counter"
               aria-label="Open shopping cart"
               data-panel-btn="cart"
             >
-              <ion-icon name="basket-outline"></ion-icon>
-
-              <data class="btn-badge" value="2">02</data>
-            </button>
+               <ion-icon id="cart" name="basket-outline"></ion-icon>
+  <span class="btn-badge cart-quantity" id="total__counter">0</span>
+             
+          
+            </button></div>
+         
+           
           </div>
         </div>
       </div>
     </header>
 
-
-
-
-
-
-  <!-- 
+    <!-- 
     - #ASIDE
   -->
 
-  <aside class="aside">
+  
+    <aside class="aside">
+      <div class="center1">
+        <input type="checkbox" id="show1" />
 
-    <div class="side-panel" data-side-panel="whishlist">
-
-      <button class="panel-close-btn" aria-label="Close whishlist" data-panel-btn="whishlist">
-        <ion-icon name="close-outline"></ion-icon>
-      </button>
-
-      <ul class="panel-list">
-
-        <li class="panel-item">
-          <a href="./product-details.html" class="panel-card">
-
-            <figure class="item-banner">
-              <img src="./assets/images/product-small-1.jpg" width="46" height="46" loading="lazy"
-                alt="Bright Side Vegetarian">
-            </figure>
-
-            <div>
-              <p class="item-title">Bright Side Vegetarian</p>
-
-              <span class="item-value">$20.15x1</span>
+        <div class="container1">
+          <label for="show1" class="close-btn1" title="close"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-x-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+              /></svg
+          ></label>
+          <div class="text1">Đăng nhập</div>
+          <form action="#">
+            <div class="data1">
+              <input type="text" placeholder="Nhập Email" required />
             </div>
-
-            <button class="item-close-btn" aria-label="Remove item">
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-          </a>
-        </li>
-
-        <li class="panel-item">
-          <a href="./product-details.html" class="panel-card">
-
-            <figure class="item-banner">
-              <img src="./assets/images/product-small-2.jpg" width="46" height="46" loading="lazy" alt="Eco Vegetable">
-            </figure>
-
-            <div>
-              <p class="item-title">Eco Vegetable</p>
-
-              <span class="item-value">$13.25x2</span>
+            <div class="data1">
+              <input type="password" placeholder="Nhập mật khẩu" required />
             </div>
-
-            <button class="item-close-btn" aria-label="Remove item">
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-          </a>
-        </li>
-
-        <li class="panel-item">
-          <a href="./product-details.html" class="panel-card">
-
-            <figure class="item-banner">
-              <img src="./assets/images/product-small-3.jpg" width="46" height="46" loading="lazy"
-                alt="House of Veggies">
-            </figure>
-
-            <div>
-              <p class="item-title">House of Veggies</p>
-
-              <span class="item-value">$20.15x1</span>
+            <div class="forgot-pass1">
+              <a href="#">Quên mật khẩu?</a>
             </div>
-
-            <button class="item-close-btn" aria-label="Remove item">
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-          </a>
-        </li>
-
-      </ul>
-
-      <div class="subtotal">
-        <p class="subtotal-text">Subtotal:</p>
-
-        <data class="subtotal-value" value="215.14">$215.14</data>
+            <div class="btn1">
+              <div class="inner1"></div>
+              <button type="submit1">Đăng nhập</button>
+            </div>
+            <div class="signup-link1">
+              Bạn không phải là một thành viên? <a href="#">Đăng ký</a>
+            </div>
+          </form>
+        </div>
       </div>
 
-      <a href="./whishlist.html" class="panel-btn">View Whishlist</a>
+      <div class="side-panel cart" data-side-panel="cart">
+        <button
+          class="panel-close-btn"
+          aria-label="Close cart"
+          data-panel-btn="cart"
+        >
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
 
-    </div>
+        <ul class="panel-list cart__items">
+        </ul>
 
-    <div class="side-panel" data-side-panel="cart">
+        <div class="subtotal">
+          <p class="subtotal-text">Tổng cộng:</p>
 
-      <button class="panel-close-btn" aria-label="Close cart" data-panel-btn="cart">
-        <ion-icon name="close-outline"></ion-icon>
-      </button>
+          <data class="subtotal-value total__cost" >0 VND</data>
+         
+        </div>
 
-      <ul class="panel-list">
-
-        <li class="panel-item">
-          <a href="./product-details.html" class="panel-card">
-
-            <figure class="item-banner">
-              <img src="./assets/images/product-small-1.jpg" width="46" height="46" loading="lazy"
-                alt="Bright Side Vegetarian">
-            </figure>
-
-            <div>
-              <p class="item-title">Bright Side Vegetarian</p>
-
-              <span class="item-value">$20.15x1</span>
-            </div>
-
-            <button class="item-close-btn" aria-label="Remove item">
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-          </a>
-        </li>
-
-        <li class="panel-item">
-          <a href="./product-details.html" class="panel-card">
-
-            <figure class="item-banner">
-              <img src="./assets/images/product-small-2.jpg" width="46" height="46" loading="lazy" alt="Eco Vegetable">
-            </figure>
-
-            <div>
-              <p class="item-title">Eco Vegetable</p>
-
-              <span class="item-value">$13.25x2</span>
-            </div>
-
-            <button class="item-close-btn" aria-label="Remove item">
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-          </a>
-        </li>
-
-      </ul>
-
-      <div class="subtotal">
-        <p class="subtotal-text">Subtotal:</p>
-
-        <data class="subtotal-value" value="215.14">$215.14</data>
+        <a href="./cart.html" class="panel-btn check_out_btn">Thanh toán</a>
       </div>
-
-      <a href="./cart.html" class="panel-btn">View Cart</a>
-
-    </div>
-
-  </aside>
+    </aside>
 
 
 
@@ -409,10 +322,15 @@ Chanh tươi</h3>
             <center style="margin-bottom: 25px; margin-top: -25px">
               <img src="./assets/images/back-ground/bg_title.png" alt="" />
             </center>
+ <!-- Swiper -->
 
-            <ul class="top-product-list grid-list">
-              <li class="top-product-item">
+ 
+        
+  <div class="swiper my-Swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">  
                 <div class="product-card top-product-card">
+                   <input type="hidden" id="product__id" value="${product.id}">
                   <figure class="card-banner">
                     <img
                       src="./assets/images/products/hoaqua/cam.webp"
@@ -433,23 +351,74 @@ Chanh tươi</h3>
 
                   <div class="card-content">
                    
+ <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
 
                     <h3 class="h4 card-title">
                       <a href="./product-details.html">Cam Navel ruột vàng</a>
                     </h3>
 
                     <div class="price-wrapper">
-                      <del class="del">$95.00</del>
+                      <del class="del">125.000 VND</del>
 
-                      <data class="price" value="85.00">$85.00</data>
+                      <data class="price" value="85.00">85.000 VND</data>
                     </div>
 
                     <button class="btn btn-primary">Thêm vào giỏ</button>
                   </div>
                 </div>
-              </li>
+               <div class="product-card top-product-card">
+                   <input type="hidden" id="product__id" value="${product.id}">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/products/hoaqua/le-xanh.webp"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Fresh Orangey"
+                    />
 
-              <li class="top-product-item">
+                    <div class="btn-wrapper">
+                     <button class="product-btn" aria-label="Quick View" >
+                     
+                      <a href="./product-details.html" > <ion-icon name="eye-outline"></ion-icon></a>
+
+                    </button>
+                    </div>
+                  </figure>
+
+                  <div class="card-content">
+                   
+ <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                    <h3 class="h4 card-title">
+                      <a href="./product-details.html">Lê xanh</a>
+                    </h3>
+
+                    <div class="price-wrapper">
+                      <del class="del">155.000 VND</del>
+
+                      <data class="price" value="85.00">95.000 VND</data>
+                    </div>
+
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                  </div>
+                </div>
+             
+</div>
+      <div class="swiper-slide">
+           
                 <div class="product-card top-product-card">
                   <figure class="card-banner">
                     <img
@@ -470,28 +439,78 @@ Chanh tươi</h3>
                   </figure>
 
                   <div class="card-content">
-                   
+                    <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
 
                     <h3 class="h4 card-title">
                       <a href="./product-details.html">Chanh tươi</a>
                     </h3>
 
                     <div class="price-wrapper">
-                      <del class="del">$35.00</del>
+                      <del class="del">100.000 VND</del>
 
-                      <data class="price" value="85.00">$25.00</data>
+                      <data class="price" value="85.00">55.000 VND</data>
                     </div>
 
                     <button class="btn btn-primary">Thêm vào giỏ</button>
                   </div>
                 </div>
-              </li>
+                  <div class="product-card top-product-card">
+                   <input type="hidden" id="product__id" value="${product.id}">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/products/haisan/ca-hoi.webp"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Fresh Orangey"
+                    />
 
-              <li class="top-product-item">
+                    <div class="btn-wrapper">
+                     <button class="product-btn" aria-label="Quick View" >
+                     
+                      <a href="./product-details.html" > <ion-icon name="eye-outline"></ion-icon></a>
+
+                    </button>
+                    </div>
+                  </figure>
+
+                  <div class="card-content">
+                   
+ <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                    <h3 class="h4 card-title">
+                      <a href="./product-details.html">Cá hồi </a>
+                    </h3>
+
+                    <div class="price-wrapper">
+                      <del class="del">325.000 VND</del>
+
+                      <data class="price" value="85.00">285.000 VND</data>
+                    </div>
+
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                  </div>
+                </div>
+             
+           </div>
+      <div class="swiper-slide"> 
                 <div class="product-card top-product-card">
                   <figure class="card-banner">
                     <img
-                      src="./assets/images/products/hoaqua/dau-tay.webp"
+                      src="./assets/images/products/raucu/rau-cai.webp"
                       width="100"
                       height="100"
                       loading="lazy"
@@ -509,28 +528,74 @@ Chanh tươi</h3>
 
                   <div class="card-content">
                    
+ <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
 
                     <h3 class="h4 card-title">
-                      <a href="./product-details.html">Dâu tây Đà Lạt</a>
+                      <a href="./product-details.html">Rau cải</a>
                     </h3>
 
                     <div class="price-wrapper">
-                      <del class="del">$450.000</del>
+                      <del class="del">35.000 VND</del>
 
-                      <data class="price" value="85.00">$400.000</data>
+                      <data class="price" value="85.00">20.000 VND</data>
                     </div>
 
                     <button class="btn btn-primary">Thêm vào giỏ</button>
                   </div>
                 </div>
-              </li>
 
+                  <div class="product-card top-product-card">
+                   <input type="hidden" id="product__id" value="${product.id}">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/products/tuoisong/suon-lon-brazil.webp"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Fresh Orangey"
+                    />
+
+                    <div class="btn-wrapper">
+                     <button class="product-btn" aria-label="Quick View" >
+                     
+                      <a href="./product-details.html" > <ion-icon name="eye-outline"></ion-icon></a>
+
+                    </button>
+                    </div>
+                  </figure>
+
+                  <div class="card-content">
+                   
+ <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                    <h3 class="h4 card-title">
+                      <a href="./product-details.html">Sườn lợn bra-zil</a>
+                    </h3>
+
+                    <div class="price-wrapper">
+                      <del class="del">225.000 VND</del>
+
+                      <data class="price" value="85.00">185.000 VND</data>
+                    </div>
+
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                  </div>
+                </div>
              
-
-             
-            
-
-              <li class="top-product-item">
+              </div>
+      <div class="swiper-slide">
                 <div class="product-card top-product-card">
                   <figure class="card-banner">
                     <img
@@ -552,23 +617,73 @@ Chanh tươi</h3>
 
                   <div class="card-content">
                    
+ <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
 
                     <h3 class="h4 card-title">
                       <a href="./product-details.html">Hạnh nhân</a>
                     </h3>
 
                     <div class="price-wrapper">
-                      <del class="del">$350.000</del>
+                      <del class="del">350.000 VND</del>
 
-                      <data class="price" value="85.00">$290.000</data>
+                      <data class="price" value="85.00">290.000 VND</data>
                     </div>
 
                     <button class="btn btn-primary">Thêm vào giỏ</button>
                   </div>
                 </div>
-              </li>
+                <div class="product-card top-product-card">
+                   <input type="hidden" id="product__id" value="${product.id}">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/products/raucu/tomato.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Fresh Orangey"
+                    />
 
-              <li class="top-product-item">
+                    <div class="btn-wrapper">
+                     <button class="product-btn" aria-label="Quick View" >
+                     
+                      <a href="./product-details.html" > <ion-icon name="eye-outline"></ion-icon></a>
+
+                    </button>
+                    </div>
+                  </figure>
+
+                  <div class="card-content">
+                   
+ <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                    <h3 class="h4 card-title">
+                      <a href="./product-details.html">Cà chua</a>
+                    </h3>
+
+                    <div class="price-wrapper">
+                      <del class="del">25.000 VND</del>
+
+                      <data class="price" value="85.00">15.000 VND</data>
+                    </div>
+
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                  </div>
+                </div>
+             
+</div>
+      <div class="swiper-slide">
                 <div class="product-card top-product-card">
                   <figure class="card-banner">
                     <img
@@ -590,24 +705,73 @@ Chanh tươi</h3>
                   </figure>
 
                   <div class="card-content">
-                   
+                    <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
 
                     <h3 class="h4 card-title">
                       <a href="./product-details.html">Táo xanh</a>
                     </h3>
 
                     <div class="price-wrapper">
-                      <del class="del">$220.000</del>
+                      <del class="del">220.000 VND</del>
 
-                      <data class="price" value="85.00">$185.000</data>
+                      <data class="price" value="85.00">185.000 VND</data>
                     </div>
 
                     <button class="btn btn-primary">Thêm vào giỏ</button>
                   </div>
                 </div>
-              </li>
+              <div class="product-card top-product-card">
+                   <input type="hidden" id="product__id" value="${product.id}">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/products/tuoisong/thit-bo-canada.webp"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Fresh Orangey"
+                    />
 
-              <li class="top-product-item">
+                    <div class="btn-wrapper">
+                     <button class="product-btn" aria-label="Quick View" >
+                     
+                      <a href="./product-details.html" > <ion-icon name="eye-outline"></ion-icon></a>
+
+                    </button>
+                    </div>
+                  </figure>
+
+                  <div class="card-content">
+                   
+ <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                    <h3 class="h4 card-title">
+                      <a href="./product-details.html">Thịt bò Canada</a>
+                    </h3>
+
+                    <div class="price-wrapper">
+                      <del class="del">350.000 VND</del>
+
+                      <data class="price" value="85.00">250.000 VND</data>
+                    </div>
+
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                  </div>
+                </div>
+             </div>
+      <div class="swiper-slide"> 
                 <div class="product-card top-product-card">
                   <figure class="card-banner">
                     <img
@@ -628,23 +792,78 @@ Chanh tươi</h3>
                   </figure>
 
                   <div class="card-content">
-                   
+                    <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
 
                     <h3 class="h4 card-title">
                       <a href="./product-details.html">Vải thiều</a>
                     </h3>
 
                     <div class="price-wrapper">
-                      <del class="del">$75.00</del>
+                      <del class="del">100.000 VND</del>
 
-                      <data class="price" value="85.00">$55.00</data>
+                      <data class="price" value="85.00">75.000 VND</data>
                     </div>
 
                     <button class="btn btn-primary">Thêm vào giỏ</button>
                   </div>
                 </div>
-              </li>
-            </ul>
+
+                  <div class="product-card top-product-card">
+                   <input type="hidden" id="product__id" value="${product.id}">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/products/haisan/cua-be.webp"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Fresh Orangey"
+                    />
+
+                    <div class="btn-wrapper">
+                     <button class="product-btn" aria-label="Quick View" >
+                     
+                      <a href="./product-details.html" > <ion-icon name="eye-outline"></ion-icon></a>
+
+                    </button>
+                    </div>
+                  </figure>
+
+                  <div class="card-content">
+                   
+ <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                    <h3 class="h4 card-title">
+                      <a href="./product-details.html">Cua biển</a>
+                    </h3>
+
+                    <div class="price-wrapper">
+                      <del class="del">375.000 VND</del>
+
+                      <data class="price" value="85.00">285.000 VND</data>
+                    </div>
+
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                  </div>
+                </div>
+             
+             </div>
+    
+    </div>
+ 
+  </div>
           </div>
         </section>
 
@@ -706,19 +925,19 @@ Chanh tươi</h3>
  <ul class="social-list">
               <li>
                 <a href="#" class="social-link">
-                 <img src="./assets/images/btn/user-1.svg" alt="">
+                 <img src="./assets/images/btn/user-1.svg" width="30px" height="30px" alt="">
                 </a>
               </li>
 
               <li>
                 <a href="#" class="social-link">
-                <img src="./assets/images/btn/user-2.svg" alt="">
+                <img src="./assets/images/btn/user-2.svg" width="30px" height="30px" alt="">
                 </a>
               </li>
 
               <li>
                 <a href="#" class="social-link">
-                 <img src="./assets/images/btn/user-3.svg" alt="">
+                 <img src="./assets/images/btn/user-3.svg" width="30px" height="30px" alt="">
                 </a>
               </li>
 
@@ -747,9 +966,7 @@ Chanh tươi</h3>
               <a href="./contact.html" class="footer-link">Liên hệ</a>
             </li>
 
-            <li>
-              <a href="./404.html" class="footer-link">404</a>
-            </li>
+          
           </ul>
 
           <ul class="footer-list">
@@ -835,8 +1052,10 @@ Chanh tươi</h3>
   <!-- 
     - custom js link
   -->
+  
+  <script src="./assets/js/swiper-bundle.min.js"></script>
   <script src="./assets/js/script.js"></script>
-
+<script src="./assets/js/product-details.js"></script>
   <!-- 
     - ionicon link
   -->

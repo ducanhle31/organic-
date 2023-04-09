@@ -1,8 +1,4 @@
 // === HELP FUNCTIONS ===
-// Random id
-function randomId() {
-  return Math.floor(Math.random() * 100000);
-}
 
 
  function convertMoney(num) {
@@ -16,7 +12,7 @@ let products = [
     del: 30000,
     type: "new",
     count: "hoaqua",
-    id: randomId(),
+    id: 1,
     title: "Cam Navel ruột vàng",
     image: "./assets/images/products/hoaqua/cam.webp",
   },
@@ -26,14 +22,14 @@ let products = [
     del: 40000,
     type: "new",
     count: "raucu",
-    id: randomId(),
+    id:2,
     title: "Khoai tây",
     image: "./assets/images/products/raucu/6.png",
   },
   {
     star: 4.5,
     count: "hoaqua",
-    id: randomId(),
+    id: 3,
     title: "Chanh tươi",
     price: 15000,
     type: "new",
@@ -47,7 +43,7 @@ let products = [
     type: "sale",
     title: "Hạt điều trắng",
 
-    id: randomId(),
+    id: 4,
     price: 330000,
     image: "./assets/images/products/cacloaihat/hat-dieu.webp",
   },
@@ -57,7 +53,7 @@ let products = [
     type: "new",
     title: "Đào đỏ mỹ ",
     star: 3.5,
-    id: randomId(),
+    id: 5,
     price: 55000,
     image: "./assets/images/products/hoaqua/dao.webp",
   },
@@ -65,7 +61,7 @@ let products = [
     star: 4,
     title: "Dâu tây đà lạt",
     count: "hoaqua",
-    id: randomId(),
+    id: 6,
     price: 200000,
 
     del: 300000,
@@ -75,7 +71,7 @@ let products = [
     star: 4,
     title: "Súp lơ xanh",
     count: "raucu",
-    id: randomId(),
+    id:7,
     price: 200000,
 
     del: 300000,
@@ -84,7 +80,7 @@ let products = [
   {
     star: 4,
     count: "hoaqua",
-    id: randomId(),
+    id: 8,
     type: "noibat",
     del: 280000,
 
@@ -96,7 +92,7 @@ let products = [
   {
     star: 5,
     count: "hoaqua",
-    id: randomId(),
+    id: 9,
     type: "new",
     del: 330000,
 
@@ -110,7 +106,7 @@ let products = [
     del: 40000,
     type: "new",
     count: "raucu",
-    id: randomId(),
+    id: 10,
     title: "Tỏi ta",
     image: "./assets/images/products/raucu/garlic_PNG12786.png",
   },
@@ -121,7 +117,7 @@ let products = [
     type: "noibat",
     title: "Nho Mỹ nhập khẩu",
 
-    id: randomId(),
+    id: 11,
     price: 235000,
 
     image: "./assets/images/products/hoaqua/nho.webp",
@@ -133,7 +129,7 @@ let products = [
     type: "sale",
     title: "Táo xanh Mỹ",
 
-    id: randomId(),
+    id: 12,
     price: 240000,
 
     image: "./assets/images/products/hoaqua/tao.webp",
@@ -144,7 +140,7 @@ let products = [
     del: 40000,
     type: "new",
     count: "raucu",
-    id: randomId(),
+    id:13,
     title: "Gừng",
     image: "./assets/images/products/raucu/ginger_PNG16800.png",
   },
@@ -155,7 +151,7 @@ let products = [
     type: "sale",
     title: "Vải thiều",
 
-    id: randomId(),
+    id: 14,
     price: 90000,
 
     image: "./assets/images/products/hoaqua/vai-thieu.webp",
@@ -167,7 +163,7 @@ let products = [
     type: "new",
     title: "Hạt hạnh nhân",
 
-    id: randomId(),
+    id:15,
     price: 320000,
     image: "./assets/images/products/cacloaihat/hanh-nhan.webp",
   },
@@ -178,7 +174,7 @@ let products = [
 
     title: "Hạt điều khô",
 
-    id: randomId(),
+    id:16,
     price: 280000,
     image: "./assets/images/products/cacloaihat/hat-dieu-kho.webp",
   },
@@ -188,9 +184,10 @@ let products = [
     del: 30000,
 
     count: "raucu",
-    id: randomId(),
+    id: 17,
     title: "Cà chua",
     image: "./assets/images/products/raucu/tomato.png",
+  
   },
   {
     count: "hat",
@@ -198,7 +195,7 @@ let products = [
     type: "noibat",
     title: "Quả óc chó",
     star: 5,
-    id: randomId(),
+    id: 18,
     price: 430000,
     image: "./assets/images/products/cacloaihat/oc-cho.webp",
   },
@@ -208,7 +205,7 @@ let products = [
     count: "haisan",
     title: "Cá hồi",
     type: "sale",
-    id: randomId(),
+    id: 19,
     price: 720000,
     image: "./assets/images/products/haisan/ca-hoi-ta.webp",
   },
@@ -219,7 +216,7 @@ let products = [
     type: "new",
     title: "Ngũ cốc",
 
-    id: randomId(),
+    id: 20,
     price: 350000,
     image: "./assets/images/products/cacloaihat/wheat_PNG108.png",
   },
@@ -229,7 +226,7 @@ let products = [
     star: 4.5,
     title: "Cua bể",
     type: "new",
-    id: randomId(),
+    id: 21,
     price: 290000,
     image: "./assets/images/products/haisan/cua-be.webp",
   },
@@ -239,7 +236,7 @@ let products = [
     type: "sale",
     title: "Mực Thanh Hóa",
     star: 3.5,
-    id: randomId(),
+    id: 22,
     price: 130000,
     image: "./assets/images/products/haisan/muc-thanh-hoa.webp",
   },
@@ -250,7 +247,7 @@ let products = [
     type: "new",
     title: "Đỗ xanh",
 
-    id: randomId(),
+    id: 23,
     price: 150000,
     image: "./assets/images/products/cacloaihat/OIP.jpg",
   },
@@ -260,7 +257,7 @@ let products = [
     type: "noibat",
     title: "Tôm biển",
     star: 5,
-    id: randomId(),
+    id: 24,
     price: 330000,
     image: "./assets/images/products/haisan/tom-bien.webp",
   },
@@ -270,7 +267,7 @@ let products = [
     type: "noibat",
     title: "Tôm biển",
     star: 5,
-    id: randomId(),
+    id: 25,
     price: 330000,
     image:
       "./assets/images/products/haisan/thumb_350_b-ch-tu-c-t-i-9520524853278.jpg",
@@ -281,7 +278,7 @@ let products = [
     type: "new",
     title: "Hành tây",
     star: 4.5,
-    id: randomId(),
+    id: 26,
     price: 55000,
     image: "./assets/images/products/raucu/hanh-tay.webp",
   },
@@ -291,7 +288,7 @@ let products = [
 
     title: "Rau cải bẹ",
     star: 5,
-    id: randomId(),
+    id: 27,
     price: 23000,
     image: "./assets/images/products/raucu/rau-cai.webp",
   },
@@ -302,7 +299,7 @@ let products = [
     type: "new",
     title: "Súp lơ trắng",
 
-    id: randomId(),
+    id: 28,
     price: 30000,
     image: "./assets/images/products/raucu/sup-lo.webp",
   },
@@ -313,7 +310,7 @@ let products = [
     type: "sale",
     title: "Ba chỉ bò mỹ",
 
-    id: randomId(),
+    id: 29,
     price: 570000,
     image: "./assets/images/products/tuoisong/ba-chi-bo-my.webp",
   },
@@ -324,7 +321,7 @@ let products = [
     type: "sale",
     title: "Sườn lợn Brazil",
 
-    id: randomId(),
+    id: 30,
     price: 230000,
     image: "./assets/images/products/tuoisong/suon-lon-brazil.webp",
   },
@@ -335,7 +332,7 @@ let products = [
     type: "sale",
     title: "Thịt bò Canada",
 
-    id: randomId(),
+    id:31,
     price: 510000,
     image: "./assets/images/products/tuoisong/thit-bo-canada.webp",
   },
@@ -346,7 +343,7 @@ let products = [
     type: "sale",
     title: "Gà organic",
 
-    id: randomId(),
+    id: 32,
     price: 230000,
     image: "./assets/images/products/tuoisong/chicken.png",
   },
@@ -357,7 +354,7 @@ let products = [
     type: "new",
     title: "Thịt bò mỹ",
 
-    id: randomId(),
+    id: 33,
     price: 470000,
     image: "./assets/images/products/tuoisong/thit-bo-my.webp",
   },
@@ -368,7 +365,7 @@ let products = [
     type: "noibat",
     title: "Thịt bò thăn",
 
-    id: randomId(),
+    id:34,
     price: 570000,
     image: "./assets/images/products/tuoisong/thit-bo-than.webp",
   },
@@ -379,7 +376,7 @@ let products = [
     type: "new",
     title: "Thịt lợn nạc vai",
 
-    id: randomId(),
+    id: 35,
     price: 170000,
     image: "./assets/images/products/tuoisong/thit-lon-lac-vai.webp",
   },
@@ -390,7 +387,7 @@ let products = [
 
     title: "Thịt bò Kobe",
     type: "noibat",
-    id: randomId(),
+    id: 36,
     price: 520000,
     image: "./assets/images/products/tuoisong/9288725449286883500.webp",
   },
@@ -401,7 +398,7 @@ let products = [
     type: "noibat",
     title: "Nấm linh chi",
 
-    id: randomId(),
+    id: 37,
     price: 990000,
     image: "./assets/images/products/raucu/babaucothesudungnamlinhchimotc.webp",
   },
@@ -412,7 +409,7 @@ let products = [
     type: "noibat",
     title: "Chôm chôm",
 
-    id: randomId(),
+    id: 38,
     price: 70000,
     image: "./assets/images/products/hoaqua/chomchom.webp",
   },
@@ -422,7 +419,7 @@ let products = [
     star: 5,
     title: "Dứa vàng",
     type: "sale",
-    id: randomId(),
+    id: 39,
     price: 50000,
     image: "./assets/images/products/hoaqua/imagepineapple5.webp",
   },
@@ -432,7 +429,7 @@ let products = [
     type: "noibat",
     title: "Chery nhập khẩu",
     star: 5,
-    id: randomId(),
+    id: 40,
     price: 270000,
     image: "./assets/images/products/hoaqua/congdungcuaquacherry3jpeg.webp",
   },
@@ -442,7 +439,7 @@ let products = [
     star: 5,
     title: "Chuối Laba nhập Thái lan",
     type: "sale",
-    id: randomId(),
+    id: 41,
     price: 370000,
     image: "./assets/images/products/hoaqua/227331.webp",
   },
@@ -452,7 +449,7 @@ let products = [
     star: 3.5,
     title: "Lựu đỏ Nam Phi",
     type: "noibat",
-    id: randomId(),
+    id: 42,
     price: 170000,
     image: "./assets/images/products/hoaqua/product7600x600.webp",
   },
@@ -500,20 +497,18 @@ function renderUI(arr) {
   for (let i = 0; i < arr.length; i++) {
     const p = arr[i];
     productsEle.innerHTML += `
-            <li class="product-card ${p.count} ${p.type} data-name="${p.id}"   >
+            <li class="product__element product-card ${p.count} ${
+      p.type
+    } data-name="${p.id}"   >
+             <input type="hidden" name="" class="product__id" value="${p.id}" />
                 <figure class="card-banner">
                  <img class='images'   width="189"
                     height="189"
-                    loading="lazy" src=${p.image}></img>
+                    loading="lazy" id="image" src=${p.image}></img>
               
 
                   <div class="btn-wrapper">
-                    <button class="product-btn" aria-label="Add to Whishlist">
-                     <a href="./../../cart.html" > <ion-icon name="basket-outline"></ion-icon> </a>
-                     
-
-                      <div class="tooltip">Mua ngay</div>
-                    </button>
+                   
 
                     <button class="product-btn" aria-label="Quick View" >
                      
@@ -527,16 +522,18 @@ function renderUI(arr) {
                  
                 </div>
                 <h3 id
-                  ="${p.id}" class="h4 card-title">
+                  ="${p.id}" class="h4 card-title product__name">
                   <a href="./product-details.html" >${p.title}</a>
                 </h3>
 
                 <div class="price-wrapper">
                   <del class="del">${convertMoney(p.del)}</del>
 
-                  <data class="price">${convertMoney(p.price)}</data>
+                  <data class="price product__price">${convertMoney(
+                    p.price
+                  )}</data>
                 </div>
-
+  <button class="btn btn-primary btn__add__to__cart">Thêm vào giỏ</button>
               </li>  
         `;
   }
