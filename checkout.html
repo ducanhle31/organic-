@@ -15,7 +15,7 @@
   -->
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/home.css" />
-<link rel="stylesheet" href="./assets/css/checkout.css">
+    <link rel="stylesheet" href="./assets/css/checkout.css" />
     <!-- 
     - google font link
   -->
@@ -25,7 +25,6 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    
   </head>
 
   <body id="top">
@@ -103,18 +102,18 @@
             <label for="show1" class="show-btn1 header-action-btn">
               <ion-icon name="person-outline"></ion-icon
             ></label>
-<div class="cart_items">   <button
-              class="header-action-btn cart__counter"
-              aria-label="Open shopping cart"
-              data-panel-btn="cart"
-            >
-               <ion-icon id="cart" name="basket-outline"></ion-icon>
-  <span class="btn-badge cart-quantity" id="total__counter">0</span>
-             
-          
-            </button></div>
-         
-           
+            <div class="cart_items">
+              <button
+                class="header-action-btn cart__counter"
+                aria-label="Open shopping cart"
+                data-panel-btn="cart"
+              >
+                <ion-icon id="cart" name="basket-outline"></ion-icon>
+                <span class="btn-badge cart-quantity" id="total__counter"
+                  >0</span
+                >
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -124,7 +123,6 @@
     - #ASIDE
   -->
 
-  
     <aside class="aside">
       <div class="center1">
         <input type="checkbox" id="show1" />
@@ -174,20 +172,17 @@
           <ion-icon name="close-outline"></ion-icon>
         </button>
 
-        <ul class="panel-list cart__items">
-        </ul>
+        <ul class="panel-list cart__items"></ul>
 
         <div class="subtotal">
           <p class="subtotal-text">Tổng cộng:</p>
 
-          <data class="subtotal-value total__cost" >0 VND</data>
-         
+          <data class="subtotal-value total__cost">0 VND</data>
         </div>
 
         <a href="./cart.html" class="panel-btn">Thanh toán</a>
       </div>
     </aside>
-
 
     <main>
       <article>
@@ -196,178 +191,180 @@
       -->
 
         <div class="breadcumb">
-    <h1>Thanh toán</h1>
-    <p> <a href="./index.html">Trang chủ >></a>Thanh toán</p>
- 
-</div>
-  <!-- 
+          <h1>Thanh toán</h1>
+          <p><a href="./index.html">Trang chủ >></a>Thanh toán</p>
+        </div>
+        <!-- 
         - #PRODUCT
       -->
 
         <section class="section products" hidden>
           <div class="container col-container">
-          
-
             <div class="container-right">
-            
-              <div class="grid-list list-product products" id="root">
-             
-              
-
-              
-                
-
-               
-              </div>
+              <div class="grid-list list-product products" id="root"></div>
 
               <div class="pagination"></div>
             </div>
           </div>
         </section>
 
-<section class="container">
-
-<div class="row">
-  <div class="col-60">
-    <div class="checkout">
-     <div class="user_info">
-            <h6>Thông Tin Khách hàng</h6>
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                placeholder="Họ và tên"
-              />
-              <div class="form-message name"></div>
-            </div>
-            <div class="form-group">
-              <input
-                type="tel"
-                class="form-control"
-                id="phone"
-                placeholder="Số điện thoại"
-              />
-              <div class="form-message phone"></div>
-            </div>
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control"
-                id="email"
-                placeholder="Email"
-              />
-              <div class="form-message email"></div>
-            </div>
-            <div class="adress_customer">
-              <select id="city" name="city">
-                <option value="default">Chọn tỉnh</option>
-              </select>
-              <select id="districts" name="districts">
-                <option value="default">Chọn huyện</option>
-              </select>
-              <select name="wards" id="wards">
-                <option value="default">Chọn xã</option>
-              </select>
-            </div>
-            <textarea rows="3" placeholder="Ghi chú"></textarea>
-          </div>
-    </div>
-  </div>
-  <div class="col-40">
-    <div class="checkout">
-      
-           <div class="checkout__pay" data-aos="fade-left" data-aos-delay="100">
-                <div class="h2 pay__heading">Đơn hàng của tôi</div>
-                <div class="pay__calc pay__calc--active">
-                  <p class="pay__title">Thành Tiền</p>
-                  <div class="pay__item">
-                    <p>Khoai tây </p> 
-                    <div class="product-qty">
-                    <button id="decrement">
-                      <ion-icon name="remove-outline"></ion-icon>
-                    </button>
-
-                    <span id="quantity">1</span>
-
-                    <button id="increment">
-                      <ion-icon name="add-outline"></ion-icon>
-                    </button>
+        <section class="container">
+          <div class="row">
+            <div class="col-60">
+              <div class="checkout">
+                <div class="user_info">
+                  <h6>Thông Tin Khách hàng</h6>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Họ và tên"
+                    />
+                    <div class="form-message name"></div>
                   </div>
-                     <div class="price">
-                    <span id="price">25.000 </span>  VND
+                  <div class="form-group">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phone"
+                      placeholder="Số điện thoại"
+                    />
+                    <div class="form-message phone"></div>
                   </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="email"
+                      placeholder="Email"
+                    />
+                    <div class="form-message email"></div>
                   </div>
-                  <div class="pay__item">
-                    <p>Sườn lợn</p>
-                      <div class="product-qty">
-                    <button id="decrement">
-                      <ion-icon name="remove-outline"></ion-icon>
-                    </button>
-
-                    <span id="quantity">1</span>
-
-                    <button id="increment">
-                      <ion-icon name="add-outline"></ion-icon>
-                    </button>
+                  <div class="adress_customer">
+                    <select id="city" name="city">
+                      <option value="default">Chọn tỉnh</option>
+                    </select>
+                    <select id="districts" name="districts">
+                      <option value="default">Chọn huyện</option>
+                    </select>
+                    <select name="wards" id="wards">
+                      <option value="default">Chọn xã</option>
+                    </select>
                   </div>
-                     <div class="price">
-                    <span id="price">250.000</span>VND
-                  </div>
-                  </div>
-                   <div class="pay__item">
-                   <p> Thịt bò Mỹ </p>
-                    <div class="product-qty">
-                    <button id="decrement">
-                      <ion-icon name="remove-outline"></ion-icon>
-                    </button>
-
-                    <span id="quantity">1</span>
-
-                    <button id="increment">
-                      <ion-icon name="add-outline"></ion-icon>
-                    </button>
-                  </div>
-                     <div class="price">
-                    <span id="price">450.000</span>VND
-                  </div>
-                  </div>
-                  <div class="pay__total">
-                    <div class="total">
-              <p>Tổng tiền :</p>
-               <span> <span id="total">725.000</span>VND</span>
-            </div>
-                  </div>
+                  <textarea rows="3" placeholder="Ghi chú"></textarea>
                 </div>
-                <div class="pay__method pay__method--active">
-                  <p class="pay__title">Phương Thức Thanh Toán</p>
-        
-                  <div class="pay__radio">
-                    <div class="pay__group">
-                      <input type="radio" id="vimomo" name="get" value="vimomo"/>
-                      <label for="vimomo">Ví Momo</label>
-                    </div>
-                    <div class="pay__group">
-                      <input type="radio" id="banking" name="get" value="banking"/>
-                      <label for="banking">Thanh toán bằng ATM</label>
-                    </div>
-                    <div class="pay__group">
-                      <input type="radio" id="get" name="get" value="nhanhang"/>
-                      <label for="get">Thanh toán khi nhận hàng</label>
-                    </div>
-                  </div>
-               
-                </div>
-                <a href="./index.html" class="pay__paynow check_out_btn">Thanh Toán</a>
-                
               </div>
-       
-    </div>
-  </div>
-</div>
+            </div>
+            <div class="col-40">
+              <div class="checkout">
+                <div
+                  class="checkout__pay"
+                  data-aos="fade-left"
+                  data-aos-delay="100"
+                >
+                  <div class="h2 pay__heading">Đơn hàng của tôi</div>
+                  <div class="pay__calc pay__calc--active">
+                    <p class="pay__title">Thành Tiền</p>
+                    <div class="pay__item">
+                      <p>Khoai tây</p>
+                      <div class="product-qty">
+                        <button id="decrement">
+                          <ion-icon name="remove-outline"></ion-icon>
+                        </button>
 
-</section>
+                        <span id="quantity">1</span>
 
+                        <button id="increment">
+                          <ion-icon name="add-outline"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="price">
+                        <span id="price">25.000 </span> VND
+                      </div>
+                    </div>
+                    <div class="pay__item">
+                      <p>Sườn lợn</p>
+                      <div class="product-qty">
+                        <button id="decrement">
+                          <ion-icon name="remove-outline"></ion-icon>
+                        </button>
+
+                        <span id="quantity">1</span>
+
+                        <button id="increment">
+                          <ion-icon name="add-outline"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="price">
+                        <span id="price">250.000</span>VND
+                      </div>
+                    </div>
+                    <div class="pay__item">
+                      <p>Thịt bò Mỹ</p>
+                      <div class="product-qty">
+                        <button id="decrement">
+                          <ion-icon name="remove-outline"></ion-icon>
+                        </button>
+
+                        <span id="quantity">1</span>
+
+                        <button id="increment">
+                          <ion-icon name="add-outline"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="price">
+                        <span id="price">450.000</span>VND
+                      </div>
+                    </div>
+                    <div class="pay__total">
+                      <div class="total">
+                        <p>Tổng tiền :</p>
+                        <span> <span id="total">725.000</span>VND</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pay__method pay__method--active">
+                    <p class="pay__title">Phương Thức Thanh Toán</p>
+
+                    <div class="pay__radio">
+                      <div class="pay__group">
+                        <input
+                          type="radio"
+                          id="vimomo"
+                          name="get"
+                          value="vimomo"
+                        />
+                        <label for="vimomo">Ví Momo</label>
+                      </div>
+                      <div class="pay__group">
+                        <input
+                          type="radio"
+                          id="banking"
+                          name="get"
+                          value="banking"
+                        />
+                        <label for="banking">Thanh toán bằng ATM</label>
+                      </div>
+                      <div class="pay__group">
+                        <input
+                          type="radio"
+                          id="get"
+                          name="get"
+                          value="nhanhang"
+                        />
+                        <label for="get">Thanh toán khi nhận hàng</label>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="./index.html" class="pay__paynow check_out_btn"
+                    >Thanh Toán</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <!-- 
         - #NEWSLETTER
@@ -398,6 +395,9 @@
             </div>
           </div>
         </section>
+        <a class="totop" href="#">
+          <ion-icon name="arrow-up-outline"></ion-icon>
+        </a>
       </article>
     </main>
 
@@ -420,26 +420,39 @@
               nhất cho thị trường.
             </p>
 
-             <ul class="social-list">
+            <ul class="social-list">
               <li>
                 <a href="#" class="social-link">
-                 <img src="./assets/images/btn/user-1.svg"width="30px" height="30px" alt="">
+                  <img
+                    src="./assets/images/btn/user-1.svg"
+                    width="30px"
+                    height="30px"
+                    alt=""
+                  />
                 </a>
               </li>
 
               <li>
                 <a href="#" class="social-link">
-                <img src="./assets/images/btn/user-2.svg"width="30px" height="30px" alt="">
+                  <img
+                    src="./assets/images/btn/user-2.svg"
+                    width="30px"
+                    height="30px"
+                    alt=""
+                  />
                 </a>
               </li>
 
               <li>
                 <a href="#" class="social-link">
-                 <img src="./assets/images/btn/user-3.svg"width="30px" height="30px" alt="">
+                  <img
+                    src="./assets/images/btn/user-3.svg"
+                    width="30px"
+                    height="30px"
+                    alt=""
+                  />
                 </a>
               </li>
-
-            
             </ul>
           </div>
 
@@ -463,8 +476,6 @@
             <li>
               <a href="./contact.html" class="footer-link">Liên hệ</a>
             </li>
-
-           
           </ul>
 
           <ul class="footer-list">
@@ -540,14 +551,13 @@
       </div>
     </footer>
 
-
     <!-- 
     - custom js link
   -->
-  <script src="./assets/js/index.js"></script>
-<script src="./assets/js/checkout.js"></script>
-   <script src="./assets/js/add-to-card.js"></script>
-<script src="./assets/js/script.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/checkout.js"></script>
+    <script src="./assets/js/add-to-card.js"></script>
+    <script src="./assets/js/script.js"></script>
     <!-- 
     - ionicon link
   -->

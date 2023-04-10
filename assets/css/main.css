@@ -950,48 +950,19 @@ background-color: red;
 
 
 
-.scroll-button{ 
-  box-sizing: border-box;
-  font-size: 1.2rem;
-  line-height: 2rem;
- 
-  width: 60px;
-  height: 60px;
-  right: 50px;
-  bottom: 50px;
-  visibility: visible;
-  filter: alpha(opacity=50);
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.7;
-  cursor: pointer;
-z-index: 100;
+
+.totop{ border: 5px solid #05c26a;
+    position: fixed;
+    bottom: 70px;
+    right: 60px;
+    background-color: #e5e5e39a;
+    padding: 15px;
+    border-radius:50%;
+    z-index: 9999;
 }
-
-
-.scroll-button{ font-size: 40px; padding-top: 15px;
-  background:#ffffff;
-  border: solid 5px #05c26a;
-  color: rgb(0, 0, 0); border-radius: 50%; position: fixed;
-}
-
-
-
-.scroll-button:hover{ color: #000000; background-color: #ffffff;
-  opacity: 1;
-}
-
-.scroll-button--hidden{
-  filter: alpha(opacity=0);
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  visibility: hidden;
-}
-
-
-
-
-
-
+.totop:hover{ border: 5px solid #038045;
+  background-color:white
+;}
 
 
 

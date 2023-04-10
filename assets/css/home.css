@@ -14,7 +14,7 @@
   background-repeat: no-repeat;
   background-position: bottom left;
   padding-block: 80px;
-  margin-top: 90px;
+  margin-top: 80px;
 }
 
 .hero-subtitle {
@@ -152,6 +152,17 @@ transform: translateX(-50%);
   gap: 20px;
   margin-block-end: 50px;
 }
+
+.filterDiv {
+  float: left;
+
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 
 .filter-btn {
   display: flex;

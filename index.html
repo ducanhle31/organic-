@@ -329,36 +329,30 @@
               <img src="./assets/images/back-ground/bg_title.png" alt="" />
             </center>
 
-            <ul class="filter-list " id="filter-btns">
-              <li data-target="all" class="filter-btn active">
-                <button><p class="filter-text">Tất cả</p></button>
-              </li>
 
-              <li data-target="raucu" class="filter-btn">
-                <button>
-                  <p class="filter-text">Rau củ</p>
+            <div class="filter-list " id="myBtnContainer">
+               <button class="  filter-btn active filter-text" onclick="filterSelection('raucu')">
+                  Rau củ
                 </button>
-              </li>
+              
 
-              <li data-target="hoaqua" class="filter-btn">
-                <button>
-                  <p class="filter-text">Hoa quả</p>
-                </button>
-              </li>
+              <button class="filter-btn filter-text" onclick="filterSelection('hoaqua')"  >
+              Hoa quả
+              </button>
 
-              <li data-target="hat" class="filter-btn">
-                <button>
-                  <p class="filter-text">Các loại hạt</p>
-                </button>
-              </li>
-              <li data-target="thit" class="filter-btn">
-                <button>
-                  <p class="filter-text">Thực phẩm tươi sống</p>
-                </button>
-              </li>
-            </ul>
+              <button class="filter-btn  filter-text" onclick="filterSelection('hat')" >
+               Các loại hạt
+              </button>
+              
+              <button class="filter-btn filter-text" onclick="filterSelection('haisan')" >
+               Hải sản
+              </button>
+              <button class="filter-btn filter-text" onclick="filterSelection('thit')" >
+              Thực phẩm tươi sống
+              </button>
+            </div>
 
-            <div class="lista grid-list items-container products ">
+            <div class=" grid-list  products ">
               
             </div>
             
@@ -1581,7 +1575,8 @@
             </div>
           </div>
         </section>
-       
+       <a class="totop" href="#">
+         <ion-icon name="arrow-up-outline"></ion-icon></a>
       </article>
       
     </main>
