@@ -15,7 +15,13 @@ let cartItems = JSON.parse(localStorage.getItem("cart_items")) || [];
 document.addEventListener("DOMContentLoaded", loadData);
 
 checkOutBtn.addEventListener("click", () => {
-  alert("Đơn hàng đã được thanh toán");
+ /*  alert("Đơn hàng đã được thanh toán"); */
+ swal(
+    "Đặt hàng thành công", "Cảm ơn bạn đã tin tưởng", "success", {
+   button: false, timer:3000
+ } 
+   
+ );
   clearCartItems();
 });
 
